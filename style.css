@@ -11,13 +11,13 @@ color:#222;
 line-height:1.6;
 }
 
-header{
-    background:linear-gradient(135deg,#006C35,#0d8a4d);
-    color:white;
-    text-align:center;
-    padding:170px 20px;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
-
 header h1{
 font-size:72px;
 margin-bottom:20px;

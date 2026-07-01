@@ -6,30 +6,25 @@
 }
 
 body{
-background:#eef3f1;
-color:#222;
-line-height:1.6;
+    background:#f5f7fa;
+    color:#222;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+header{
+    background:linear-gradient(135deg,#006C35,#0d8a4d);
+    color:white;
+    text-align:center;
+    padding:170px 20px;
 }
+
 header h1{
-font-size:72px;
-margin-bottom:20px;
-font-weight:700;
-letter-spacing:2px;
+    font-size:60px;
+    margin-bottom:20px;
 }
 
 header p{
-font-size:22px;
-max-width:800px;
-margin:0 auto 35px;
-line-height:1.7;
+    font-size:24px;
+    margin-bottom:35px;
 }
 
 button{
@@ -49,19 +44,16 @@ button:hover{
 transform:translateY(-4px);
 }
     
+}
 nav{
-background:rgba(0,77,37,0.95);
-backdrop-filter:blur(10px);
+background:#004d25;
 color:white;
-padding:18px 60px;
+padding:20px 50px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 4px 15px rgba(0,0,0,.2);
 }
+
 nav ul{
 display:flex;
 gap:25px;
@@ -88,17 +80,12 @@ padding:50px;
 
 .card{
 background:white;
-padding:30px;
-border-radius:18px;
-box-shadow:0 12px 30px rgba(0,0,0,.12);
-transition:.35s;
-font-size:20px;
-font-weight:600;
-text-align:center;
-cursor:pointer;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-12px);
-box-shadow:0 20px 40px rgba(0,0,0,.2);
+transform:translateY(-10px);
 }

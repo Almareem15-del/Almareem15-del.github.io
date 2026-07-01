@@ -28,22 +28,18 @@ header p{
 }
 
 button{
-padding:16px 40px;
-font-size:18px;
-border:none;
-border-radius:50px;
-background:#FFD700;
-color:#222;
-cursor:pointer;
-transition:.35s;
-font-weight:bold;
-box-shadow:0 10px 25px rgba(0,0,0,.25);
+    padding:15px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    background:#FFD700;
+    color:#222;
+    cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
-transform:translateY(-4px);
-}
-    
+    transform:scale(1.05);
 }
 nav{
 background:#004d25;

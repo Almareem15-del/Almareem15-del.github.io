@@ -52,8 +52,7 @@ transform:translateY(-4px);
 }
 nav{
 background:rgba(0,77,37,0.95);
-backdrop-filter: none;
-opacity: 1;
+backdrop-filter:blur(10px);
 color:white;
 padding:18px 60px;
 display:flex;

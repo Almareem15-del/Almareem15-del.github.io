@@ -363,3 +363,53 @@ button:hover {
     font-size:14px;
     color:#bbb;
 }
+/* ==========================
+        FOUNDER SECTION
+========================== */
+
+.founder-section{
+    padding:90px 10%;
+    background:white;
+}
+
+.founder-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.founder-image img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #004d25;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.founder-content{
+    max-width:600px;
+}
+
+.founder-content h2{
+    color:#004d25;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.founder-content h3{
+    font-size:30px;
+}
+
+.founder-title{
+    color:#777;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.founder-content p{
+    line-height:1.8;
+    color:#555;
+}

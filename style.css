@@ -499,3 +499,7 @@ button:hover {
 .back-button:hover{
     background:#006633;
 }
+.card-link{
+    text-decoration:none;
+    color:inherit;
+}

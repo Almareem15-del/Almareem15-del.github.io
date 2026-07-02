@@ -319,3 +319,47 @@ button:hover {
 .contact-form button{
     align-self:flex-start;
 }
+/* ==========================
+          FOOTER
+========================== */
+
+.footer{
+    background:#004d25;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.footer h2{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#ddd;
+}
+
+.footer-links{
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#FFD700;
+}
+
+.copyright{
+    margin-top:25px;
+    font-size:14px;
+    color:#bbb;
+}

@@ -714,3 +714,242 @@ font-size:17px;
 }
 
 }
+/* ==========================================
+   GCC VISION HUB - SUSTAINABILITY CSS
+========================================== */
+
+.sustainability-hero{
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-overlay{
+    width:100%;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.hero-tag{
+    display:inline-block;
+    background:#16a34a;
+    color:#fff;
+    padding:8px 20px;
+    border-radius:50px;
+    font-size:.9rem;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    color:#fff;
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#f5f5f5;
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary-btn{
+    background:#16a34a;
+    color:white;
+}
+
+.primary-btn:hover{
+    background:#15803d;
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:white;
+    color:#111;
+}
+
+.intro-section,
+.spotlight-section,
+.topics-section,
+.importance-section,
+.featured-articles,
+.future-section{
+    padding:90px 20px;
+}
+
+.container{
+    width:min(1200px,95%);
+    margin:auto;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:#16a34a;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    font-size:2.5rem;
+    margin:15px 0;
+}
+
+.section-heading p,
+.intro-text{
+    color:#666;
+    line-height:1.8;
+    max-width:900px;
+    margin:auto;
+}
+
+.spotlight-grid,
+.importance-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.spotlight-card,
+.importance-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.spotlight-card:hover,
+.importance-card:hover{
+    transform:translateY(-8px);
+}
+
+.spotlight-image{
+    font-size:60px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.spotlight-content h3{
+    margin-bottom:15px;
+}
+
+.spotlight-content p{
+    color:#666;
+    line-height:1.8;
+}
+
+.read-btn{
+    display:inline-block;
+    margin-top:20px;
+    color:#16a34a;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.importance-icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.article-badge{
+    display:inline-block;
+    background:#16a34a;
+    color:white;
+    padding:6px 14px;
+    border-radius:50px;
+    font-size:.8rem;
+    margin-bottom:15px;
+}
+
+.future-section{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+}
+
+.future-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.future-tag{
+    display:inline-block;
+    background:#16a34a;
+    color:white;
+    padding:8px 18px;
+    border-radius:50px;
+    margin-bottom:20px;
+}
+
+.future-content h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.future-content p{
+    color:#ddd;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.future-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.5rem;
+}
+
+.section-heading h2{
+font-size:2rem;
+}
+
+.hero-buttons,
+.future-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+}

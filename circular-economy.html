@@ -1,63 +1,381 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Circular Economy</title>
+<title>Circular Economy | GCC Vision Hub</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#071a12;color:#fff}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#141007;
+    color:white;
+}
 
 .hero{
-height:60vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+    min-height:95vh;
+    background:
+    linear-gradient(120deg,rgba(35,22,0,.95),rgba(110,75,0,.82),rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:60px 8%;
+}
 
-.hero h1{font-size:50px;color:#00ff88}
+.hero-content{
+    max-width:760px;
+}
 
-.container{max-width:1000px;margin:auto;padding:40px}
+.logo-tag{
+    display:inline-block;
+    background:white;
+    color:#9b6a00;
+    padding:14px 26px;
+    border-radius:0 0 35px 0;
+    font-weight:bold;
+    margin-bottom:70px;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.case-label{
+    color:#ffd166;
+    letter-spacing:6px;
+    font-weight:bold;
+    margin-bottom:16px;
+}
+
+.hero h1{
+    font-size:82px;
+    color:#ffd166;
+    margin-bottom:18px;
+}
+
+.hero h3{
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:25px;
+}
+
+.line{
+    width:90px;
+    height:5px;
+    background:#ffd166;
+    margin:25px 0;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.section{
+    padding:75px 8%;
+}
+
+.overview{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.visual{
+    min-height:330px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),
+    url("https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
+}
+
+.section h2{
+    font-size:36px;
+    color:#ffd166;
+    margin-bottom:20px;
+}
+
+.section p{
+    line-height:1.8;
+    color:#eee1c1;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px;
+    margin-top:40px;
+}
 
 .card{
-background:rgba(255,255,255,0.05);
-padding:25px;margin-bottom:20px;
-border-radius:15px;
-border-left:4px solid #00ff88;
-backdrop-filter:blur(10px)}
+    background:rgba(255,255,255,.05);
+    padding:28px;
+    border-radius:20px;
+    border:1px solid rgba(255,209,102,.25);
+    transition:.3s;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
 
-.card h2{color:#00ff88}
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.08);
+}
 
-.back{display:inline-block;padding:10px 20px;background:#00ff88;color:#000;text-decoration:none;border-radius:8px}
+.card h3{
+    color:#ffd166;
+    margin-bottom:12px;
+}
+
+.impact{
+    margin:50px 8%;
+    padding:50px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(45,29,0,.9),rgba(45,29,0,.9)),
+    url("https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.impact h2{
+    text-align:center;
+    color:#ffd166;
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
+}
+
+.stat{
+    border:1px solid rgba(255,209,102,.45);
+    border-radius:20px;
+    padding:28px 15px;
+    text-align:center;
+    background:rgba(255,255,255,.05);
+}
+
+.stat h3{
+    font-size:34px;
+    color:#ffd166;
+    margin-bottom:8px;
+}
+
+.stat p{
+    color:white;
+    font-size:14px;
+}
+
+.future{
+    padding:80px 8%;
+    background:#241700;
+    text-align:center;
+}
+
+.future h2{
+    font-size:38px;
+    color:#ffd166;
+    margin-bottom:20px;
+}
+
+.future p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    color:#eee1c1;
+}
+
+.back{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 28px;
+    background:#ffd166;
+    color:#241700;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.footer{
+    background:#0d0902;
+    padding:28px;
+    text-align:center;
+    color:#c9b37a;
+}
+
+@media(max-width:800px){
+    .hero h1{
+        font-size:52px;
+    }
+
+    .overview{
+        grid-template-columns:1fr;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-<h1>🔁 Circular Economy</h1>
-<p>Reduce, reuse, recycle — building a zero-waste future.</p>
-</div>
+<section class="hero">
+    <div class="hero-content">
 
-<div class="container">
+        <div class="logo-tag">GCC VISION HUB</div>
 
-<div class="card">
-<h2>What is Circular Economy?</h2>
-<p>A system where waste is eliminated by reusing resources continuously.</p>
-</div>
+        <div class="case-label">RESOURCE INNOVATION REPORT</div>
 
-<div class="card">
-<h2>Why It Matters</h2>
-<p>Reduces pollution and preserves natural resources.</p>
-</div>
+        <h1>Circular Economy</h1>
 
-<div class="card">
-<h2>GCC Role</h2>
-<p>Countries are investing in recycling and sustainable production systems.</p>
-</div>
+        <h3>Turning Waste into Value for a Sustainable GCC Future</h3>
 
-<a class="back" href="sustainability.html">⬅ Back</a>
+        <div class="line"></div>
 
+        <p>
+            The circular economy is a new model of growth where resources are reused,
+            products are redesigned, waste is reduced, and value continues to circulate
+            through society and industry.
+        </p>
+
+    </div>
+</section>
+
+<section class="section overview">
+
+    <div>
+        <h2>Overview</h2>
+
+        <p>
+            A circular economy moves away from the traditional “take, make, waste”
+            model. Instead, it focuses on reducing waste, extending product life,
+            recycling materials and creating smarter production systems.
+        </p>
+
+        <p>
+            For GCC economies, circular systems can support environmental protection,
+            industrial innovation, resource efficiency and long-term economic diversification.
+        </p>
+    </div>
+
+    <div class="visual"></div>
+
+</section>
+
+<section class="impact">
+
+    <h2>Circular Economy Impact Areas</h2>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h3>♻</h3>
+            <p>Recycling and reuse</p>
+        </div>
+
+        <div class="stat">
+            <h3>0</h3>
+            <p>Zero-waste ambition</p>
+        </div>
+
+        <div class="stat">
+            <h3>CO₂</h3>
+            <p>Lower emissions</p>
+        </div>
+
+        <div class="stat">
+            <h3>🌍</h3>
+            <p>Resource protection</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Key Circular Economy Strategies</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>♻ Recycling Systems</h3>
+            <p>
+                Advanced recycling helps recover materials such as plastics, metals,
+                paper and industrial waste for reuse.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏭 Sustainable Manufacturing</h3>
+            <p>
+                Cleaner industrial design reduces material use, energy consumption
+                and waste generation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📦 Product Redesign</h3>
+            <p>
+                Products can be designed for repair, reuse, longer life and easier recycling.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚮 Waste-to-Value</h3>
+            <p>
+                Waste can become a resource through energy recovery, composting,
+                recycling and industrial reuse.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏙 Circular Cities</h3>
+            <p>
+                Cities can reduce waste by improving public systems, smart collection
+                and community participation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💡 Innovation & Policy</h3>
+            <p>
+                Regulations, entrepreneurship and technology can accelerate circular
+                business models across the GCC.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="future">
+
+    <h2>The Future of Circular Economy in the GCC</h2>
+
+    <p>
+        Circular economy systems can help GCC countries reduce waste, protect natural
+        resources, strengthen industries and build more resilient economies. By turning
+        waste into value, the region can lead a smarter and more sustainable model of growth.
+    </p>
+
+    <a href="sustainability.html" class="back">⬅ Back to Sustainability</a>
+
+</section>
+
+<div class="footer">
+    © 2026 GCC Vision Hub | Circular Economy
 </div>
 
 </body>

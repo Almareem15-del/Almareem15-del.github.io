@@ -1,62 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Technology</title>
+
+<title>Green Technology | GCC Vision Hub</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#061b14;color:#fff}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#061610;
+color:white;
+}
 
 .hero{
-height:60vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+min-height:95vh;
+background:
+linear-gradient(120deg,rgba(0,30,15,.95),rgba(0,95,60,.82),rgba(0,0,0,.35)),
 url("https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80");
 background-size:cover;
-display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+background-position:center;
+display:flex;
+align-items:center;
+padding:60px 8%;
+}
 
-.hero h1{font-size:50px;color:#00ff88}
+.hero-content{
+max-width:760px;
+}
 
-.container{max-width:1000px;margin:auto;padding:40px}
+.logo-tag{
+display:inline-block;
+background:white;
+color:#0b8f50;
+padding:14px 26px;
+border-radius:0 0 35px 0;
+font-weight:bold;
+margin-bottom:70px;
+box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.case-label{
+color:#71ff9d;
+letter-spacing:6px;
+font-weight:bold;
+margin-bottom:16px;
+}
+
+.hero h1{
+font-size:82px;
+color:#71ff9d;
+margin-bottom:18px;
+}
+
+.hero h3{
+font-size:30px;
+font-weight:400;
+margin-bottom:25px;
+}
+
+.line{
+width:90px;
+height:5px;
+background:#71ff9d;
+margin:25px 0;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+max-width:650px;
+}
+
+.section{
+padding:75px 8%;
+}
+
+.overview{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:45px;
+align-items:center;
+}
+
+.visual{
+min-height:330px;
+border-radius:30px;
+background:
+linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),
+url("https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80");
+background-size:cover;
+background-position:center;
+box-shadow:0 20px 45px rgba(0,0,0,.3);
+}
+
+.section h2{
+font-size:36px;
+color:#71ff9d;
+margin-bottom:20px;
+}
+
+.section p{
+line-height:1.8;
+color:#d8ece0;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:24px;
+margin-top:40px;
+}
 
 .card{
-background:rgba(255,255,255,0.05);
-padding:25px;margin-bottom:20px;
-border-radius:15px;
-border-left:4px solid #00ff88;
-backdrop-filter:blur(10px)}
+background:rgba(255,255,255,.05);
+padding:28px;
+border-radius:20px;
+border:1px solid rgba(113,255,157,.2);
+transition:.3s;
+box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
 
-.card h2{color:#00ff88}
+.card:hover{
+transform:translateY(-8px);
+}
 
-.back{display:inline-block;padding:10px 20px;background:#00ff88;color:#000;text-decoration:none;border-radius:8px}
+.card h3{
+color:#71ff9d;
+margin-bottom:12px;
+}
+
+.future{
+padding:80px 8%;
+background:#042414;
+text-align:center;
+}
+
+.future h2{
+font-size:38px;
+color:#71ff9d;
+margin-bottom:20px;
+}
+
+.future p{
+max-width:850px;
+margin:auto;
+line-height:1.9;
+}
+
+.back{
+display:inline-block;
+margin-top:35px;
+padding:14px 28px;
+background:#71ff9d;
+color:#032214;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.footer{
+background:#020d09;
+padding:28px;
+text-align:center;
+color:#9fc3aa;
+}
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:52px;
+}
+
+.overview{
+grid-template-columns:1fr;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<div class="hero">
-<h1>🌱 Green Technology</h1>
-<p>Innovations that protect the planet and reduce environmental impact.</p>
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="logo-tag">GCC VISION HUB</div>
+
+<div class="case-label">
+GREEN INNOVATION REPORT
 </div>
 
-<div class="container">
+<h1>Green Technology</h1>
+
+<h3>
+Innovation Driving Sustainable Development
+</h3>
+
+<div class="line"></div>
+
+<p>
+
+Green technology combines innovation with environmental responsibility.
+It reduces pollution, improves energy efficiency and supports a cleaner,
+more sustainable future for the GCC.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section overview">
+
+<div>
+
+<h2>Overview</h2>
+
+<p>
+
+Green technologies are changing the way governments,
+industries and communities use energy, transport,
+water and natural resources.
+
+</p>
+
+<p>
+
+Across the GCC, major investments in clean energy,
+electric mobility, carbon reduction and sustainable
+industries are accelerating the transition toward
+future-ready economies.
+
+</p>
+
+</div>
+
+<div class="visual"></div>
+
+</section>
+
+<section class="section">
+
+<h2>Green Technologies Transforming the GCC</h2>
+
+<div class="cards">
 
 <div class="card">
-<h2>What is Green Tech?</h2>
-<p>Technology designed to reduce pollution and improve sustainability.</p>
+<h3>☀ Solar Energy</h3>
+<p>Large-scale solar projects provide clean electricity across the GCC.</p>
 </div>
 
 <div class="card">
-<h2>Examples</h2>
-<p>Electric vehicles, solar systems, smart grids, carbon capture.</p>
+<h3>⚡ Smart Grids</h3>
+<p>Digital electricity networks improve reliability and reduce waste.</p>
 </div>
 
 <div class="card">
-<h2>GCC Innovation</h2>
-<p>The GCC is leading global investment in green + AI technologies.</p>
+<h3>🚗 Electric Mobility</h3>
+<p>Electric vehicles reduce emissions and improve urban sustainability.</p>
 </div>
 
-<a class="back" href="sustainability.html">⬅ Back</a>
+<div class="card">
+<h3>🌿 Carbon Capture</h3>
+<p>Modern systems help reduce industrial carbon emissions.</p>
+</div>
+
+<div class="card">
+<h3>♻ Circular Manufacturing</h3>
+<p>Cleaner production processes minimize waste and maximize resources.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Sustainability</h3>
+<p>Artificial Intelligence improves energy, water and environmental management.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="future">
+
+<h2>
+The Future of Green Technology
+</h2>
+
+<p>
+
+Green technology will become one of the strongest drivers of economic diversification,
+environmental protection and innovation throughout the GCC,
+helping create smarter industries and sustainable societies.
+
+</p>
+
+<a href="sustainability.html" class="back">
+⬅ Back to Sustainability
+</a>
+
+</section>
+
+<div class="footer">
+
+© 2026 GCC Vision Hub | Green Technology
 
 </div>
 

@@ -3,75 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Change | The GCC Vision Hub</title>
+    <title>Climate Change | GCC Vision Hub</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#081a14;
+            color:white;
+        }
+
+        /* HERO */
+        .hero{
+            height:60vh;
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+            url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80");
+            background-size:cover;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        .hero h1{
+            font-size:50px;
+            margin:0;
+            color:#00ff88;
+        }
+
+        .hero p{
+            max-width:750px;
+            font-size:18px;
+            opacity:0.9;
+        }
+
+        /* CONTENT */
+        .container{
+            max-width:1000px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.05);
+            padding:25px;
+            margin-bottom:20px;
+            border-radius:15px;
+            border-left:4px solid #00ff88;
+            backdrop-filter: blur(10px);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            background:rgba(255,255,255,0.08);
+        }
+
+        .card h2{
+            color:#00ff88;
+            margin-top:0;
+        }
+
+        .badge{
+            display:inline-block;
+            padding:5px 10px;
+            background:#00ff88;
+            color:black;
+            border-radius:20px;
+            font-size:12px;
+            margin-bottom:10px;
+        }
+
+        .back{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 20px;
+            background:#00ff88;
+            color:black;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:bold;
+        }
+
+        .back:hover{
+            background:#00cc66;
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
-
-    <h2>The GCC Vision Hub</h2>
-
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sustainability.html">Sustainability</a></li>
-    </ul>
-
-</nav>
-
-<section class="technology-hero">
-
-    <h1>🌍 Climate Change</h1>
-
+<div class="hero">
+    <div class="badge">GLOBAL CHALLENGE</div>
+    <h1>Climate Change</h1>
     <p>
-        Understanding one of the greatest global challenges and how the GCC is building a more resilient future.
+        Understanding the global climate crisis and how the GCC is leading solutions for a sustainable future.
     </p>
+</div>
 
-</section>
+<div class="container">
 
-<section class="technology-about">
+    <div class="card">
+        <h2>🌍 What is Climate Change?</h2>
+        <p>
+            Climate change refers to long-term shifts in temperature and weather patterns caused mainly by human activities like burning fossil fuels and deforestation.
+        </p>
+    </div>
 
-    <h2>What is Climate Change?</h2>
+    <div class="card">
+        <h2>🔥 Main Causes</h2>
+        <p>
+            • Greenhouse gas emissions<br>
+            • Fossil fuel burning<br>
+            • Industrial pollution<br>
+            • Deforestation<br>
+            • Overconsumption of energy
+        </p>
+    </div>
 
-    <p>
-        Climate change refers to long-term changes in Earth's temperatures and weather patterns. While natural factors influence climate, human activities such as burning fossil fuels, deforestation, and industrial emissions have significantly accelerated global warming.
-    </p>
+    <div class="card">
+        <h2>🌡️ Effects on the World</h2>
+        <p>
+            Rising temperatures, melting ice caps, extreme weather, droughts, floods, and rising sea levels are some major effects impacting ecosystems and human life.
+        </p>
+    </div>
 
-    <h2>Major Causes</h2>
+    <div class="card">
+        <h2>🏜️ Impact on GCC</h2>
+        <p>
+            The GCC region faces rising heat, water scarcity, desertification, and pressure on infrastructure — pushing governments to invest in sustainability.
+        </p>
+    </div>
 
-    <p>
-        • Greenhouse gas emissions<br>
-        • Burning coal, oil and natural gas<br>
-        • Deforestation<br>
-        • Industrial pollution<br>
-        • Unsustainable consumption
-    </p>
+    <div class="card">
+        <h2>🌱 GCC Response</h2>
+        <p>
+            GCC countries are investing in renewable energy, carbon reduction projects, smart cities, and environmental protection initiatives to fight climate change.
+        </p>
+    </div>
 
-    <h2>Effects on the GCC</h2>
+    <a class="back" href="sustainability.html">⬅ Back to Sustainability</a>
 
-    <p>
-        GCC countries face rising temperatures, water scarcity, desertification, sea-level rise, and increasing demand for sustainable infrastructure. These challenges are driving investments in renewable energy and climate adaptation.
-    </p>
-
-    <h2>How the GCC is Responding</h2>
-
-    <p>
-        Countries across the Gulf are investing in solar power, green hydrogen, sustainable cities, carbon reduction, and environmental conservation through long-term national visions.
-    </p>
-
-    <h2>Did You Know?</h2>
-
-    <p>
-        🌱 Saudi Arabia and the UAE are among the world's fastest-growing investors in renewable energy and green technologies, while Oman is expanding its green hydrogen sector.
-    </p>
-
-    <a href="sustainability.html" class="back-button">
-        ⬅ Back to Sustainability
-    </a>
-
-</section>
+</div>
 
 </body>
 </html>

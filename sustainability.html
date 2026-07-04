@@ -1,108 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainability | The GCC Vision Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustainability | GCC Vision Hub</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#061610;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#04110c;
+}
+
+nav h2{
+    color:#77ff9d;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    min-height:95vh;
+    background:
+    linear-gradient(120deg,rgba(0,30,20,.95),rgba(0,100,65,.82),rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:60px 8%;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.tag{
+    display:inline-block;
+    background:white;
+    color:#0b8f50;
+    padding:14px 26px;
+    border-radius:0 0 35px 0;
+    font-weight:bold;
+    margin-bottom:70px;
+}
+
+.label{
+    color:#77ff9d;
+    letter-spacing:6px;
+    font-weight:bold;
+    margin-bottom:16px;
+}
+
+.hero h1{
+    font-size:82px;
+    color:#77ff9d;
+    margin-bottom:18px;
+}
+
+.hero h3{
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:25px;
+}
+
+.line{
+    width:90px;
+    height:5px;
+    background:#77ff9d;
+    margin:25px 0;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.section{
+    padding:75px 8%;
+}
+
+.section h2{
+    font-size:38px;
+    color:#77ff9d;
+    margin-bottom:20px;
+}
+
+.section p{
+    color:#d8ece0;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card-link{
+    text-decoration:none;
+    color:white;
+}
+
+.card{
+    min-height:230px;
+    background:rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:24px;
+    border:1px solid rgba(119,255,157,.25);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,.09);
+}
+
+.card h3{
+    color:#77ff9d;
+    font-size:24px;
+    margin-bottom:14px;
+}
+
+.card p{
+    font-size:15px;
+}
+
+.spotlight{
+    margin:50px 8%;
+    padding:55px;
+    border-radius:34px;
+    background:
+    linear-gradient(rgba(0,35,20,.92),rgba(0,35,20,.92)),
+    url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.spotlight h2{
+    color:#77ff9d;
+    text-align:center;
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+.spotlight-card{
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(119,255,157,.3);
+    border-radius:26px;
+    padding:35px;
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.spotlight-card h3{
+    font-size:32px;
+    color:#77ff9d;
+    margin-bottom:15px;
+}
+
+.read-btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#77ff9d;
+    color:#032214;
+    padding:14px 26px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.future{
+    padding:85px 8%;
+    background:#042414;
+    text-align:center;
+}
+
+.future h2{
+    color:#77ff9d;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.future p{
+    max-width:900px;
+    margin:auto;
+    color:#d8ece0;
+    line-height:1.9;
+}
+
+.footer{
+    background:#020d09;
+    text-align:center;
+    padding:30px;
+    color:#9fc3aa;
+}
+
+@media(max-width:800px){
+    .hero h1{
+        font-size:52px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <nav>
-
     <h2>The GCC Vision Hub</h2>
-
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#sustainability">Sustainability</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
     </ul>
-
 </nav>
 
-<section class="technology-hero" id="sustainability">
+<section class="hero">
+    <div class="hero-content">
+        <div class="tag">GCC VISION HUB</div>
 
-    <h1>Sustainability</h1>
+        <div class="label">SUSTAINABILITY PLATFORM</div>
 
-    <p>
-        Discover sustainability, renewable energy,
-        green innovation, and environmental leadership
-        shaping the future of the GCC.
-    </p>
+        <h1>Sustainability</h1>
 
-</section>
+        <h3>Building a Greener, Smarter and More Resilient GCC Future</h3>
 
-<section class="technology-grid">
+        <div class="line"></div>
 
-<a href="climate-change.html" class="card-link">
-<div class="technology-card">
-<h2>🌍 Climate Change</h2>
-<p>
-Understand climate challenges, global warming,
-and how the GCC is adapting for a resilient future.
-</p>
-</div>
-</a>
-
-<a href="renewable-energy.html" class="card-link">
-<div class="technology-card">
-<h2>☀ Renewable Energy</h2>
-<p>
-Explore solar, wind, and clean energy technologies
-powering sustainable development.
-</p>
-</div>
-</a>
-
-<a href="water-conservation.html" class="card-link">
-<div class="technology-card">
-<h2>💧 Water Conservation</h2>
-<p>
-Learn about desalination, water security,
-and sustainable water management.
-</p>
-</div>
-</a>
-
-<a href="smart-cities.html" class="card-link">
-<div class="technology-card">
-<h2>🏙 Sustainable Cities</h2>
-<p>
-Discover how smart cities combine innovation,
-technology, and sustainability.
-</p>
-</div>
-</a>
-
-<a href="circular-economy.html" class="card-link">
-<div class="technology-card">
-<h2>♻ Circular Economy</h2>
-<p>
-Explore recycling, resource efficiency,
-and responsible production systems.
-</p>
-</div>
-</a>
-
-<a href="green-technology.html" class="card-link">
-<div class="technology-card">
-<h2>🌱 Green Technology</h2>
-<p>
-Discover technologies helping industries
-reduce environmental impact and build a greener future.
-</p>
-</div>
-    
-</a>
-<a href="omifco-case-study.html" class="card-link">
-    <div class="technology-card">
-        <h2>🏭 OMIFCO Case Study</h2>
         <p>
-            Explore how OMIFCO represents sustainable industrial development,
-            innovation, and environmental responsibility in Oman.
+            Explore climate action, renewable energy, smart cities, circular economy,
+            water conservation, green technology and real GCC sustainability case studies.
         </p>
     </div>
-</a>
-    
 </section>
+
+<section class="section">
+    <h2>Explore Sustainability Topics</h2>
+    <p>
+        Learn how innovation, policy, technology and environmental responsibility
+        are shaping the next chapter of sustainable development across the GCC.
+    </p>
+
+    <div class="grid">
+
+        <a href="climate-change.html" class="card-link">
+            <div class="card">
+                <h3>🌍 Climate Change</h3>
+                <p>Understand climate risks, adaptation and resilience for the GCC region.</p>
+            </div>
+        </a>
+
+        <a href="renewable-energy.html" class="card-link">
+            <div class="card">
+                <h3>⚡ Renewable Energy</h3>
+                <p>Explore solar, wind, green hydrogen and clean power transformation.</p>
+            </div>
+        </a>
+
+        <a href="water-conservation.html" class="card-link">
+            <div class="card">
+                <h3>💧 Water Conservation</h3>
+                <p>Discover smart water systems, desalination and water security solutions.</p>
+            </div>
+        </a>
+
+        <a href="smart-cities.html" class="card-link">
+            <div class="card">
+                <h3>🏙 Smart Cities</h3>
+                <p>Explore AI, IoT and digital infrastructure powering future urban life.</p>
+            </div>
+        </a>
+
+        <a href="circular-economy.html" class="card-link">
+            <div class="card">
+                <h3>♻ Circular Economy</h3>
+                <p>Learn how waste can become value through reuse, recycling and redesign.</p>
+            </div>
+        </a>
+
+        <a href="green-technology.html" class="card-link">
+            <div class="card">
+                <h3>🌱 Green Technology</h3>
+                <p>Explore clean innovation, smart grids, carbon capture and eco-tech.</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<section class="spotlight">
+    <h2>GCC Sustainability Spotlight</h2>
+
+    <div class="spotlight-card">
+        <h3>🏭 OMIFCO Case Study</h3>
+        <p>
+            A premium GCC Vision Hub case study exploring OMIFCO’s role in sustainable
+            industrial development, environmental responsibility and innovation in Oman.
+        </p>
+
+        <a href="omifco-case-study.html" class="read-btn">
+            Read OMIFCO Case Study →
+        </a>
+    </div>
+</section>
+
+<section class="future">
+    <h2>The Future of Sustainability in the GCC</h2>
+    <p>
+        Sustainability is no longer just an environmental topic. It is a foundation
+        for resilient economies, smarter cities, cleaner industries and better quality
+        of life. GCC Vision Hub brings these ideas together through educational articles,
+        real-world case studies and future-focused insights.
+    </p>
+</section>
+
+<div class="footer">
+    © 2026 GCC Vision Hub | Sustainability
+</div>
+
+</body>
+</html>

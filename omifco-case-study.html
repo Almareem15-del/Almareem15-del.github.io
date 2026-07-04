@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OMIFCO Case Study | GCC Vision Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f6f8f5;
+    color:#123524;
+}
+
+.hero{
+    min-height:90vh;
+    background:
+    linear-gradient(110deg, rgba(0,45,32,.95) 0%, rgba(0,65,42,.9) 40%, rgba(0,0,0,.35) 100%),
+    url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:50px 8%;
+    position:relative;
+    overflow:hidden;
+}
+
+.logo-box{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    background:white;
+    color:#006b3f;
+    padding:14px 28px;
+    border-radius:0 0 35px 0;
+    margin-bottom:70px;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.logo-circle{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:8px solid #1c8f4d;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.logo-text h2{
+    font-size:28px;
+    letter-spacing:2px;
+}
+
+.logo-text span{
+    font-size:15px;
+    font-weight:bold;
+}
+
+.hero-content{
+    max-width:720px;
+}
+
+.case-label{
+    color:#8fd450;
+    letter-spacing:8px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:82px;
+    line-height:1;
+    margin-bottom:18px;
+}
+
+.hero h3{
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:25px;
+}
+
+.green-line{
+    width:90px;
+    height:5px;
+    background:#8fd450;
+    margin:25px 0;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:600px;
+}
+
+.badge{
+    position:absolute;
+    right:8%;
+    bottom:90px;
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    background:#062f22;
+    border:8px solid #d6b25e;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#ffd76b;
+    font-weight:bold;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.badge .leaf{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.section{
+    padding:70px 8%;
+}
+
+.overview{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.section h2{
+    font-size:30px;
+    color:#064b31;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.section p{
+    font-size:17px;
+    line-height:1.8;
+    color:#333;
+    margin-bottom:18px;
+}
+
+.image-card{
+    min-height:330px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05)),
+    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+
+.image-card::before{
+    content:"OMIFCO";
+    position:absolute;
+    top:30px;
+    left:35px;
+    background:white;
+    color:#006b3f;
+    font-size:34px;
+    font-weight:bold;
+    padding:12px 24px;
+    border-radius:18px;
+}
+
+.initiatives-title,
+.impact-title{
+    text-align:center;
+    margin-top:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:22px;
+    margin-top:35px;
+}
+
+.card{
+    background:white;
+    padding:28px 20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+    border:1px solid #e4eee8;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card .icon{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#064b31;
+    margin-bottom:12px;
+    font-size:17px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.impact{
+    margin:60px 8%;
+    border-radius:28px;
+    background:
+    linear-gradient(rgba(0,45,32,.9), rgba(0,45,32,.9)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:45px;
+}
+
+.impact h2{
+    color:#8fd450;
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
+}
+
+.stat{
+    border:1px solid rgba(143,212,80,.6);
+    border-radius:20px;
+    padding:28px 15px;
+    text-align:center;
+}
+
+.stat h3{
+    font-size:34px;
+    color:#b7df68;
+    margin-bottom:8px;
+}
+
+.stat p{
+    color:white;
+    font-size:14px;
+}
+
+.tomorrow{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.final-image{
+    min-height:280px;
+    border-radius:50px 20px 50px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+.back{
+    display:inline-block;
+    margin-top:25px;
+    background:#087a45;
+    color:white;
+    text-decoration:none;
+    padding:13px 24px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.footer{
+    background:#063522;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:800px){
+    .hero h1{
+        font-size:52px;
+    }
+
+    .badge{
+        position:static;
+        margin-top:40px;
+    }
+
+    .overview,
+    .tomorrow{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="logo-box">
+        <div class="logo-circle">O</div>
+        <div class="logo-text">
+            <span>أوميفكو</span>
+            <h2>OMIFCO</h2>
+        </div>
+    </div>
+
+    <div class="hero-content">
+        <div class="case-label">CASE STUDY</div>
+        <h1>OMIFCO</h1>
+        <h3>Pioneering Sustainability in the GCC Chemical Industry</h3>
+        <div class="green-line"></div>
+        <p>
+            OMIFCO represents a powerful example of how industrial growth,
+            environmental responsibility, innovation, and sustainable operations
+            can come together to support Oman’s long-term development vision.
+        </p>
+    </div>
+
+    <div class="badge">
+        <div class="leaf">🍃</div>
+        Sustainable Today<br>
+        Responsible Tomorrow
+    </div>
+
+</section>
+
+<section class="section overview">
+
+    <div>
+        <h2>OVERVIEW</h2>
+        <p>
+            Oman India Fertiliser Company, known as OMIFCO, is one of Oman’s
+            important industrial organizations and a major contributor to the
+            fertilizer sector.
+        </p>
+        <p>
+            Located in Sur, Oman, OMIFCO plays a role in supporting agriculture,
+            industrial development, and economic cooperation while moving toward
+            more responsible and sustainable operations.
+        </p>
+    </div>
+
+    <div class="image-card"></div>
+
+</section>
+
+<section class="section">
+
+    <h2 class="initiatives-title">KEY SUSTAINABILITY INITIATIVES</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Energy Efficiency</h3>
+            <p>Improving industrial performance while reducing unnecessary energy use.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💧</div>
+            <h3>Water Management</h3>
+            <p>Promoting responsible water use in an environment where water security matters.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌿</div>
+            <h3>Environmental Stewardship</h3>
+            <p>Supporting cleaner operations and responsible environmental practices.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Community Engagement</h3>
+            <p>Contributing to local development, skills, education, and community progress.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💡</div>
+            <h3>Innovation</h3>
+            <p>Using modern industrial systems to improve efficiency and sustainability.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="impact">
+
+    <h2>OUR IMPACT</h2>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h3>2400+</h3>
+            <p>Employment and industrial development impact</p>
+        </div>
+
+        <div class="stat">
+            <h3>CO₂</h3>
+            <p>Focus on emissions awareness and cleaner processes</p>
+        </div>
+
+        <div class="stat">
+            <h3>95%</h3>
+            <p>Resource efficiency mindset and operational optimization</p>
+        </div>
+
+        <div class="stat">
+            <h3>20%</h3>
+            <p>Water savings focus through responsible management</p>
+        </div>
+
+        <div class="stat">
+            <h3>🌱</h3>
+            <p>Sustainable growth for Oman and the wider region</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section tomorrow">
+
+    <div>
+        <h2>BUILDING A BETTER TOMORROW</h2>
+        <p>
+            At OMIFCO, sustainability can be understood as a commitment to
+            long-term value creation, environmental responsibility, and
+            industrial progress.
+        </p>
+        <p>
+            This case study highlights how GCC industries can grow while also
+            contributing to a cleaner, smarter, and more sustainable future.
+        </p>
+
+        <a href="sustainability.html" class="back">⬅ Back to Sustainability</a>
+    </div>
+
+    <div class="final-image"></div>
+
+</section>
+
+<div class="footer">
+    © 2026 The GCC Vision Hub | OMIFCO Sustainability Case Study
+</div>
+
+</body>
+</html>

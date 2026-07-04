@@ -1,153 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renewable Energy | GCC Vision Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renewable Energy | GCC Vision Hub</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, sans-serif;
-            background:#0b1f14;
-            color:white;
-        }
+body{
+    background:#071611;
+    color:white;
+}
 
-        /* HERO */
-        .hero{
-            height:60vh;
-            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-            url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80");
-            background-size:cover;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            padding:20px;
-        }
+.hero{
+    min-height:95vh;
+    background:
+    linear-gradient(120deg,rgba(0,30,20,.95),rgba(0,95,60,.82),rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:60px 8%;
+}
 
-        .hero h1{
-            font-size:50px;
-            margin:0;
-            color:#00ff88;
-        }
+.hero-content{
+    max-width:760px;
+}
 
-        .hero p{
-            max-width:700px;
-            font-size:18px;
-            opacity:0.9;
-        }
+.logo-tag{
+    display:inline-block;
+    background:white;
+    color:#0b8f50;
+    padding:14px 26px;
+    border-radius:0 0 35px 0;
+    font-weight:bold;
+    margin-bottom:70px;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
 
-        /* CONTENT */
-        .container{
-            max-width:1000px;
-            margin:auto;
-            padding:40px 20px;
-        }
+.case-label{
+    color:#77ff9d;
+    letter-spacing:6px;
+    font-weight:bold;
+    margin-bottom:16px;
+}
 
-        .card{
-            background:rgba(255,255,255,0.05);
-            padding:25px;
-            margin-bottom:20px;
-            border-radius:15px;
-            border-left:4px solid #00ff88;
-            backdrop-filter: blur(10px);
-            transition:0.3s;
-        }
+.hero h1{
+    font-size:82px;
+    color:#77ff9d;
+    margin-bottom:18px;
+}
 
-        .card:hover{
-            transform:translateY(-5px);
-            background:rgba(255,255,255,0.08);
-        }
+.hero h3{
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:25px;
+}
 
-        .card h2{
-            color:#00ff88;
-            margin-top:0;
-        }
+.line{
+    width:90px;
+    height:5px;
+    background:#77ff9d;
+    margin:25px 0;
+}
 
-        /* BADGE */
-        .badge{
-            display:inline-block;
-            padding:5px 10px;
-            background:#00ff88;
-            color:black;
-            border-radius:20px;
-            font-size:12px;
-            margin-bottom:10px;
-        }
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+}
 
-        /* BUTTON */
-        .back{
-            display:inline-block;
-            margin-top:20px;
-            padding:10px 20px;
-            background:#00ff88;
-            color:black;
-            text-decoration:none;
-            border-radius:8px;
-            font-weight:bold;
-        }
+.section{
+    padding:75px 8%;
+}
 
-        .back:hover{
-            background:#00cc66;
-        }
-    </style>
+.overview{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.visual{
+    min-height:330px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(0,0,0,.16),rgba(0,0,0,.16)),
+    url("https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
+}
+
+.section h2{
+    font-size:36px;
+    color:#77ff9d;
+    margin-bottom:20px;
+}
+
+.section p{
+    line-height:1.8;
+    color:#d8ece0;
+    font-size:17px;
+}
+
+.impact{
+    margin:50px 8%;
+    padding:50px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(0,35,20,.9),rgba(0,35,20,.9)),
+    url("https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.impact h2{
+    text-align:center;
+    color:#77ff9d;
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
+}
+
+.stat{
+    border:1px solid rgba(119,255,157,.45);
+    border-radius:20px;
+    padding:28px 15px;
+    text-align:center;
+    background:rgba(255,255,255,.05);
+}
+
+.stat h3{
+    font-size:34px;
+    color:#77ff9d;
+    margin-bottom:8px;
+}
+
+.stat p{
+    color:white;
+    font-size:14px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px;
+    margin-top:40px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    padding:28px;
+    border-radius:20px;
+    border:1px solid rgba(119,255,157,.2);
+    transition:.3s;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.08);
+}
+
+.card h3{
+    color:#77ff9d;
+    margin-bottom:12px;
+}
+
+.future{
+    padding:80px 8%;
+    background:#042414;
+    text-align:center;
+}
+
+.future h2{
+    font-size:38px;
+    color:#77ff9d;
+    margin-bottom:20px;
+}
+
+.future p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    color:#d8ece0;
+}
+
+.back{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 28px;
+    background:#77ff9d;
+    color:#032214;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.footer{
+    background:#020d09;
+    padding:28px;
+    text-align:center;
+    color:#9fc3aa;
+}
+
+@media(max-width:800px){
+    .hero h1{
+        font-size:52px;
+    }
+
+    .overview{
+        grid-template-columns:1fr;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<div class="hero">
-    <div class="badge">GREEN FUTURE</div>
-    <h1>Renewable Energy</h1>
+<section class="hero">
+    <div class="hero-content">
+        <div class="logo-tag">GCC VISION HUB</div>
+
+        <div class="case-label">CLEAN ENERGY REPORT</div>
+
+        <h1>Renewable Energy</h1>
+
+        <h3>Powering the GCC’s Sustainable Future</h3>
+
+        <div class="line"></div>
+
+        <p>
+            Renewable energy is transforming the future of the GCC by reducing dependence
+            on fossil fuels, supporting climate goals, and creating cleaner, smarter,
+            and more resilient economies.
+        </p>
+    </div>
+</section>
+
+<section class="section overview">
+    <div>
+        <h2>Overview</h2>
+        <p>
+            Renewable energy comes from natural sources such as sunlight, wind,
+            water and green hydrogen. These sources are cleaner and more sustainable
+            than traditional fossil fuels.
+        </p>
+        <p>
+            Across the GCC, countries are investing in solar parks, wind farms,
+            hydrogen projects and smart energy systems to prepare for a diversified
+            and environmentally responsible future.
+        </p>
+    </div>
+
+    <div class="visual"></div>
+</section>
+
+<section class="impact">
+    <h2>Renewable Energy Impact Areas</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>☀</h3>
+            <p>Solar power expansion</p>
+        </div>
+
+        <div class="stat">
+            <h3>🌬</h3>
+            <p>Wind energy potential</p>
+        </div>
+
+        <div class="stat">
+            <h3>H₂</h3>
+            <p>Green hydrogen future</p>
+        </div>
+
+        <div class="stat">
+            <h3>CO₂</h3>
+            <p>Lower carbon emissions</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Key Renewable Energy Technologies</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>☀ Solar Energy</h3>
+            <p>
+                Solar power is one of the strongest renewable opportunities in the GCC
+                because of abundant sunlight and large-scale desert land availability.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌬 Wind Energy</h3>
+            <p>
+                Wind projects can support clean electricity generation, especially in
+                coastal and open desert regions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Green Hydrogen</h3>
+            <p>
+                Green hydrogen is produced using renewable electricity and may become
+                one of the GCC’s strongest future export sectors.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Smart Grids</h3>
+            <p>
+                Smart grids help balance supply and demand while integrating solar,
+                wind and energy storage into national power networks.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔋 Energy Storage</h3>
+            <p>
+                Battery storage and advanced energy systems help renewable power remain
+                reliable even when sunlight or wind conditions change.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏙 Clean Cities</h3>
+            <p>
+                Renewable energy supports sustainable cities by powering transport,
+                buildings, infrastructure and digital systems more responsibly.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="future">
+    <h2>The Future of Renewable Energy in the GCC</h2>
+
     <p>
-        Powering the future with solar, wind, hydrogen and clean innovation across the GCC region.
+        The GCC is positioned to become a global leader in clean energy through solar,
+        wind, green hydrogen and smart energy infrastructure. Renewable energy is not
+        only an environmental solution — it is also a major opportunity for innovation,
+        investment, jobs and long-term economic transformation.
     </p>
-</div>
 
-<div class="container">
+    <a href="sustainability.html" class="back">⬅ Back to Sustainability</a>
+</section>
 
-    <div class="card">
-        <h2>⚡ What is Renewable Energy?</h2>
-        <p>
-            Renewable energy comes from natural sources like sunlight, wind, and water that never run out.
-            It is clean, sustainable, and reduces pollution and climate change impact.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>☀️ Solar Power</h2>
-        <p>
-            The GCC is one of the world’s best regions for solar energy due to high sunlight availability.
-            Large solar farms are being built to power cities sustainably.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>🌬️ Wind Energy</h2>
-        <p>
-            Wind turbines convert air movement into electricity, supporting clean power generation in coastal and desert regions.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>💧 Green Hydrogen</h2>
-        <p>
-            Green hydrogen is becoming a major future fuel in the GCC, created using renewable electricity instead of fossil fuels.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>🌍 GCC Future Vision</h2>
-        <p>
-            Countries like UAE, Saudi Arabia, and Oman are investing heavily in renewable energy projects to reduce oil dependency and build sustainable economies.
-        </p>
-    </div>
-
-    <a class="back" href="sustainability.html">⬅ Back to Sustainability</a>
-
+<div class="footer">
+    © 2026 GCC Vision Hub | Renewable Energy
 </div>
 
 </body>

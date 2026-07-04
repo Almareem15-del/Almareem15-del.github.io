@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Cities | GCC Vision Hub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#06131f;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#03101b;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav h2{
+color:#55f5ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+min-height:90vh;
+background:
+linear-gradient(rgba(0,18,35,.86),rgba(0,18,35,.86)),
+url("https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:70px 8%;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.badge{
+display:inline-block;
+padding:12px 25px;
+background:white;
+color:#007f8a;
+border-radius:0 0 35px 0;
+font-weight:bold;
+margin-bottom:50px;
+}
+
+.hero h1{
+font-size:78px;
+color:#55f5ff;
+margin-bottom:20px;
+}
+
+.hero h3{
+font-size:30px;
+font-weight:400;
+margin-bottom:25px;
+}
+
+.line{
+width:90px;
+height:5px;
+background:#55f5ff;
+margin:25px 0;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.9;
+max-width:700px;
+color:#dfeff3;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+font-size:40px;
+color:#55f5ff;
+margin-bottom:20px;
+}
+
+.section p{
+font-size:17px;
+line-height:1.8;
+color:#d7e9ec;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:45px;
+}
+
+.card-link{
+text-decoration:none;
+color:white;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(85,245,255,.2);
+border-radius:22px;
+padding:30px;
+min-height:220px;
+transition:.35s;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,.08);
+}
+
+.card h3{
+font-size:24px;
+color:#55f5ff;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:15px;
+line-height:1.7;
+}
+
+.feature{
+margin:50px 8%;
+padding:50px;
+border-radius:30px;
+background:
+linear-gradient(rgba(0,30,45,.92),rgba(0,30,45,.92)),
+url("https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.feature h2{
+text-align:center;
+font-size:38px;
+color:#55f5ff;
+margin-bottom:35px;
+}
+
+.feature-card{
+background:rgba(255,255,255,.06);
+padding:35px;
+border-radius:25px;
+text-align:center;
+border:1px solid rgba(85,245,255,.25);
+}
+
+.feature-card h3{
+font-size:34px;
+margin-bottom:18px;
+color:#55f5ff;
+}
+
+.read-btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 28px;
+background:#55f5ff;
+color:#001923;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h2>The GCC Vision Hub</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="technology.html">Technology</a></li>
+<li><a href="smart-cities-main.html">Smart Cities</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">GCC VISION HUB</div>
+
+<h1>Smart Cities</h1>
+
+<h3>Creating Intelligent, Connected and Sustainable Urban Futures</h3>
+
+<div class="line"></div>
+
+<p>
+
+Smart cities combine artificial intelligence,
+Internet of Things, digital infrastructure,
+renewable energy and innovative governance
+to improve quality of life across the GCC.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Explore Smart City Topics</h2>
+
+<p>
+
+Discover how modern technologies are shaping
+the cities of tomorrow throughout the Gulf region.
+
+</p>
+
+<div class="grid">
+
+<a href="smart-mobility.html" class="card-link">
+<div class="card">
+<h3>🚦 Smart Mobility</h3>
+<p>Future transportation, autonomous vehicles and intelligent traffic systems.</p>
+</div>
+</a>
+
+<a href="smart-buildings.html" class="card-link">
+<div class="card">
+<h3>🏢 Smart Buildings</h3>
+<p>Energy-efficient buildings using automation and AI technologies.</p>
+</div>
+</a>
+
+<a href="smart-energy.html" class="card-link">
+<div class="card">
+<h3>⚡ Smart Energy</h3>
+<p>Modern grids, renewable integration and intelligent energy management.</p>
+</div>
+</a>
+
+<a href="smart-healthcare.html" class="card-link">
+<div class="card">
+<h3>🏥 Smart Healthcare</h3>
+<p>Digital healthcare, AI diagnostics and connected hospitals.</p>
+</div>
+</a>
+
+<a href="smart-governance.html" class="card-link">
+<div class="card">
+<h3>🏛 Smart Governance</h3>
+<p>Digital government services and citizen-focused innovation.</p>
+</div>
+</a>
+
+<a href="digital-infrastructure.html" class="card-link">
+<div class="card">
+<h3>🌐 Digital Infrastructure</h3>
+<p>5G, fibre networks, cloud platforms and resilient city infrastructure.</p>
+</div>
+</a>
+  
+  <a href="smart-water.html" class="card-link">
+<div class="card">
+<h3>💧 Smart Water Systems</h3>
+<p>Digital water networks, leak detection and intelligent conservation systems.</p>
+</div>
+</a>
+
+<a href="ai-smart-cities.html" class="card-link">
+<div class="card">
+<h3>🤖 AI in Smart Cities</h3>
+<p>How artificial intelligence powers planning, mobility, security and services.</p>
+</div>
+</a>
+
+<a href="digital-twins.html" class="card-link">
+<div class="card">
+<h3>🛰 Digital Twins</h3>
+<p>Virtual city models used for simulation, planning and real-time decision-making.</p>
+</div>
+</a>
+
+<a href="autonomous-transport.html" class="card-link">
+<div class="card">
+<h3>🚁 Autonomous Transport</h3>
+<p>Self-driving vehicles, drones and next-generation mobility networks.</p>
+</div>
+</a>
+
+</div>
+
+</section>
+
+<section class="feature">
+
+<h2>Featured Smart City Insight</h2>
+
+<div class="feature-card">
+
+<h3>🏙 Smart Cities and the Future of the GCC</h3>
+
+<p>
+The GCC is becoming one of the world’s most ambitious regions for smart city development.
+From NEOM and Masdar City to Lusail and future urban districts, the region is using
+technology, sustainability and planning to redefine the future of city life.
+</p>
+
+<a href="smart-cities.html" class="read-btn">
+Read Full Insight →
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Why Smart Cities Matter</h2>
+
+<p>
+Smart cities are not only about technology. They are about improving human life.
+By combining digital systems with sustainability, cities can reduce traffic,
+save energy, manage water, improve healthcare, strengthen public safety and
+create more efficient government services.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>🌍 Sustainability</h3>
+<p>Smart cities reduce waste, energy use and emissions through intelligent systems.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Innovation</h3>
+<p>They create opportunities for startups, research, AI and advanced technologies.</p>
+</div>
+
+<div class="card">
+<h3>🏙 Quality of Life</h3>
+<p>Better transport, healthcare, safety and public services improve daily living.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="feature">
+
+<h2>GCC Smart City Examples</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🇸🇦 NEOM</h3>
+<p>A future-focused Saudi project built around clean energy, digital systems and advanced urban design.</p>
+</div>
+
+<div class="card">
+<h3>🇦🇪 Masdar City</h3>
+<p>A leading sustainable urban development focused on clean energy, innovation and smart planning.</p>
+</div>
+
+<div class="card">
+<h3>🇶🇦 Lusail City</h3>
+<p>A planned smart city with modern infrastructure, digital services and sustainable city systems.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" style="text-align:center;">
+
+<h2>The Future of Smart Cities</h2>
+
+<p style="max-width:900px;margin:auto;">
+The future of the GCC will be shaped by cities that are intelligent, sustainable,
+connected and human-centered. Smart cities will support economic diversification,
+environmental responsibility, innovation and a higher quality of life for future generations.
+</p>
+
+<a href="index.html" class="read-btn">
+⬅ Back to Home
+</a>
+
+</section>
+
+<div class="footer" style="background:#020b12;padding:30px;text-align:center;color:#9fbfc5;">
+© 2026 The GCC Vision Hub | Smart Cities
+</div>
+
+</body>
+</html>

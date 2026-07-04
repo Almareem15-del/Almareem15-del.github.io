@@ -5,70 +5,379 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Water Conservation | GCC Vision Hub</title>
 
-<link rel="stylesheet" href="style.css">
-
 <style>
-body{margin:0;font-family:Arial;background:#081f1c;color:#fff}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#061923;
+    color:white;
+}
 
 .hero{
-height:60vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1527766833261-b09c3163a791?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+    min-height:95vh;
+    background:
+    linear-gradient(120deg, rgba(0,22,35,.95), rgba(0,105,120,.82), rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    padding:60px 8%;
+    display:flex;
+    align-items:center;
+}
 
-.hero h1{font-size:50px;color:#00ff88;margin:0}
-.hero p{max-width:750px}
+.hero-content{
+    max-width:780px;
+}
 
-.container{max-width:1000px;margin:auto;padding:40px}
+.logo-tag{
+    display:inline-block;
+    background:white;
+    color:#007b8f;
+    padding:14px 26px;
+    border-radius:0 0 35px 0;
+    font-weight:bold;
+    margin-bottom:70px;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.case-label{
+    color:#5ee7ff;
+    letter-spacing:7px;
+    font-weight:bold;
+    margin-bottom:16px;
+}
+
+.hero h1{
+    font-size:82px;
+    line-height:1;
+    color:#5ee7ff;
+    margin-bottom:18px;
+}
+
+.hero h3{
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:25px;
+}
+
+.line{
+    width:90px;
+    height:5px;
+    background:#5ee7ff;
+    margin:25px 0;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+    color:#e4f9ff;
+}
+
+.section{
+    padding:75px 8%;
+}
+
+.section h2{
+    font-size:36px;
+    color:#5ee7ff;
+    margin-bottom:20px;
+}
+
+.section p{
+    font-size:17px;
+    line-height:1.8;
+    color:#d7edf2;
+}
+
+.overview{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.visual-card{
+    min-height:330px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(0,0,0,.16), rgba(0,0,0,.16)),
+    url("https://images.unsplash.com/photo-1527766833261-b09c3163a791?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+.stats-box{
+    margin:40px 8%;
+    padding:50px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(0,35,50,.92),rgba(0,35,50,.92)),
+    url("https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.stats-box h2{
+    text-align:center;
+    color:#5ee7ff;
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
+}
+
+.stat{
+    border:1px solid rgba(94,231,255,.45);
+    border-radius:20px;
+    padding:28px 15px;
+    text-align:center;
+    background:rgba(255,255,255,.05);
+}
+
+.stat h3{
+    font-size:34px;
+    color:#5ee7ff;
+    margin-bottom:8px;
+}
+
+.stat p{
+    color:white;
+    font-size:14px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:24px;
+    margin-top:35px;
+}
 
 .card{
-background:rgba(255,255,255,0.05);
-padding:25px;margin-bottom:20px;
-border-radius:15px;
-border-left:4px solid #00ff88;
-backdrop-filter:blur(10px);
-transition:0.3s}
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(94,231,255,.22);
+    border-radius:20px;
+    padding:28px;
+    transition:.3s;
+    box-shadow:0 15px 35px rgba(0,0,0,.22);
+}
 
-.card:hover{transform:translateY(-5px)}
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.09);
+}
 
-.card h2{color:#00ff88}
+.card h3{
+    color:#5ee7ff;
+    margin-bottom:12px;
+}
 
-.back{display:inline-block;margin-top:20px;padding:10px 20px;background:#00ff88;color:#000;text-decoration:none;border-radius:8px}
+.card p{
+    font-size:15px;
+}
+
+.future{
+    padding:80px 8%;
+    background:#002634;
+    text-align:center;
+}
+
+.future h2{
+    color:#5ee7ff;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.future p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    color:#d7edf2;
+}
+
+.back{
+    display:inline-block;
+    margin-top:35px;
+    background:#5ee7ff;
+    color:#002634;
+    text-decoration:none;
+    padding:14px 26px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.footer{
+    background:#020d12;
+    padding:28px;
+    text-align:center;
+    color:#9fc6cf;
+}
+
+@media(max-width:800px){
+    .hero h1{
+        font-size:52px;
+    }
+
+    .overview{
+        grid-template-columns:1fr;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-<h1>💧 Water Conservation</h1>
-<p>Protecting water resources through innovation, efficiency and sustainability across the GCC.</p>
-</div>
+<section class="hero">
+    <div class="hero-content">
+        <div class="logo-tag">GCC VISION HUB</div>
 
-<div class="container">
+        <div class="case-label">WATER SECURITY REPORT</div>
 
-<div class="card">
-<h2>What is Water Conservation?</h2>
-<p>Efficient use and protection of water resources for future generations.</p>
-</div>
+        <h1>Water Conservation</h1>
 
-<div class="card">
-<h2>Why It Matters</h2>
-<p>The GCC faces extreme water scarcity and depends on advanced desalination systems.</p>
-</div>
+        <h3>Securing Every Drop for a Water-Resilient GCC Future</h3>
 
-<div class="card">
-<h2>Solutions</h2>
-<p>Smart irrigation, wastewater recycling, AI water monitoring, and desalination innovation.</p>
-</div>
+        <div class="line"></div>
 
-<div class="card">
-<h2>Future Vision</h2>
-<p>Smart water grids will eliminate waste and optimize consumption across cities.</p>
-</div>
+        <p>
+            Water conservation is one of the most important sustainability priorities
+            for the GCC. In a region shaped by deserts, high temperatures and rapid
+            urban growth, protecting every drop is essential for future generations.
+        </p>
+    </div>
+</section>
 
-<a class="back" href="sustainability.html">⬅ Back</a>
+<section class="section overview">
 
+    <div>
+        <h2>Overview</h2>
+        <p>
+            Water conservation means using water wisely, reducing waste and protecting
+            limited water resources through technology, policy and responsible behavior.
+        </p>
+        <p>
+            Across the GCC, countries are investing in desalination, wastewater recycling,
+            smart irrigation and digital monitoring systems to improve water security.
+        </p>
+    </div>
+
+    <div class="visual-card"></div>
+
+</section>
+
+<section class="stats-box">
+
+    <h2>Water Conservation Impact Areas</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>💧</h3>
+            <p>Water security</p>
+        </div>
+
+        <div class="stat">
+            <h3>AI</h3>
+            <p>Smart water monitoring</p>
+        </div>
+
+        <div class="stat">
+            <h3>♻</h3>
+            <p>Wastewater reuse</p>
+        </div>
+
+        <div class="stat">
+            <h3>🌱</h3>
+            <p>Efficient irrigation</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Key Solutions</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💧 Desalination Innovation</h3>
+            <p>
+                Modern desalination technologies help GCC countries produce fresh water
+                from seawater while improving energy efficiency.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>♻ Water Recycling</h3>
+            <p>
+                Treated wastewater can be reused for landscaping, agriculture,
+                industrial cooling and urban systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 AI Water Management</h3>
+            <p>
+                AI systems can detect leaks, monitor demand and optimize distribution
+                networks in real time.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌾 Smart Irrigation</h3>
+            <p>
+                Smart irrigation reduces water waste by using sensors, weather data
+                and automated scheduling.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏙 Urban Planning</h3>
+            <p>
+                Sustainable cities use efficient water systems, green spaces and
+                climate-sensitive design.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Public Awareness</h3>
+            <p>
+                Conservation depends on communities understanding the value of water
+                and using it responsibly.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="future">
+
+    <h2>The Future of Water in the GCC</h2>
+
+    <p>
+        The future of water conservation in the GCC will depend on innovation,
+        cooperation and smarter infrastructure. By combining technology with
+        responsible planning, the region can build a water-resilient future for
+        homes, industries, agriculture and cities.
+    </p>
+
+    <a href="sustainability.html" class="back">⬅ Back to Sustainability</a>
+
+</section>
+
+<div class="footer">
+    © 2026 The GCC Vision Hub | Water Conservation
 </div>
 
 </body>

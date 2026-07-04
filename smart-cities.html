@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Cities | GCC Vision Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#06131f;
+    color:white;
+}
+
+/* HERO */
+.hero{
+    min-height:90vh;
+    background:
+    linear-gradient(120deg, rgba(0,20,35,.95), rgba(0,80,70,.8), rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    padding:60px 8%;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:780px;
+}
+
+.tag{
+    display:inline-block;
+    background:#00ffcc;
+    color:#001b24;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    line-height:1;
+    margin-bottom:22px;
+    color:#00ffcc;
+}
+
+.hero p{
+    font-size:19px;
+    line-height:1.8;
+    max-width:700px;
+}
+
+/* MAIN */
+.section{
+    padding:70px 8%;
+}
+
+.section h2{
+    font-size:34px;
+    color:#00ffcc;
+    margin-bottom:18px;
+}
+
+.section p{
+    color:#d7e9ec;
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* STATS */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
+    margin-top:35px;
+}
+
+.stat{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(0,255,204,.25);
+    border-radius:18px;
+    padding:28px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.stat h3{
+    font-size:34px;
+    color:#00ffcc;
+    margin-bottom:8px;
+}
+
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px;
+    margin-top:35px;
+}
+
+.card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(0,255,204,.22);
+    border-radius:20px;
+    padding:28px;
+    transition:.3s;
+    box-shadow:0 15px 35px rgba(0,0,0,.22);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.09);
+}
+
+.card h3{
+    color:#00ffcc;
+    margin-bottom:12px;
+    font-size:21px;
+}
+
+.card p{
+    font-size:15px;
+}
+
+/* CASE STUDY */
+.case-section{
+    margin:60px 8%;
+    padding:55px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(0,30,40,.88), rgba(0,30,40,.88)),
+    url("https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.case-section h2{
+    color:#00ffcc;
+    text-align:center;
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+/* FUTURE */
+.future{
+    padding:80px 8%;
+    background:#001b24;
+    text-align:center;
+}
+
+.future h2{
+    color:#00ffcc;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.future p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    color:#d7e9ec;
+}
+
+.back{
+    display:inline-block;
+    margin-top:35px;
+    background:#00ffcc;
+    color:#001b24;
+    text-decoration:none;
+    padding:14px 26px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.footer{
+    background:#020b12;
+    padding:28px;
+    text-align:center;
+    color:#9fbfc5;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:46px;
+    }
+
+    .case-section{
+        margin:30px 5%;
+        padding:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">FUTURE URBAN LIVING</span>
+        <h1>Smart Cities</h1>
+        <p>
+            Smart cities combine technology, sustainability, data, and human-centered
+            design to create safer, cleaner, faster, and more connected urban life
+            across the GCC and the world.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>What Are Smart Cities?</h2>
+    <p>
+        Smart cities use digital technologies such as artificial intelligence,
+        Internet of Things, data analytics, 5G networks, and automation to improve
+        transportation, energy use, public safety, healthcare, education, and
+        environmental sustainability.
+    </p>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>5G</h3>
+            <p>High-speed connectivity</p>
+        </div>
+
+        <div class="stat">
+            <h3>AI</h3>
+            <p>Smarter decision-making</p>
+        </div>
+
+        <div class="stat">
+            <h3>IoT</h3>
+            <p>Connected infrastructure</p>
+        </div>
+
+        <div class="stat">
+            <h3>CO₂</h3>
+            <p>Lower urban emissions</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Core Technologies Behind Smart Cities</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🤖 Artificial Intelligence</h3>
+            <p>
+                AI helps cities manage traffic, energy, security, services,
+                and emergency systems more efficiently.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Internet of Things</h3>
+            <p>
+                Sensors collect real-time data from roads, buildings, vehicles,
+                water systems, and public spaces.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚦 Smart Mobility</h3>
+            <p>
+                Intelligent transport systems reduce congestion, improve safety,
+                and support electric and autonomous vehicles.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Smart Energy</h3>
+            <p>
+                Smart grids manage electricity efficiently and integrate solar,
+                wind, and other renewable energy sources.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏥 Smart Healthcare</h3>
+            <p>
+                Connected healthcare systems improve patient care, emergency
+                response, remote diagnosis, and health monitoring.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌿 Sustainable Infrastructure</h3>
+            <p>
+                Green buildings, efficient cooling systems, smart waste management,
+                and water-saving technologies reduce environmental impact.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="case-section">
+    <h2>GCC Smart City Case Studies</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🇸🇦 NEOM</h3>
+            <p>
+                A future-focused Saudi project built around clean energy,
+                advanced infrastructure, and next-generation urban design.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🇦🇪 Masdar City</h3>
+            <p>
+                A pioneering sustainable urban development combining clean
+                energy, research, green buildings, and smart mobility.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🇶🇦 Lusail City</h3>
+            <p>
+                A planned smart city in Qatar designed with modern transport,
+                digital infrastructure, and sustainable urban systems.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="future">
+    <h2>The Future of Smart Cities in the GCC</h2>
+    <p>
+        The GCC is becoming a global laboratory for smart urban innovation.
+        As cities grow, smart systems will help governments improve quality
+        of life, reduce waste, protect the environment, and build resilient
+        economies for future generations.
+    </p>
+
+    <a href="sustainability.html" class="back">⬅ Back to Sustainability</a>
+</section>
+
+<div class="footer">
+    © 2026 The GCC Vision Hub | Smart Cities
+</div>
+
+</body>
+</html>

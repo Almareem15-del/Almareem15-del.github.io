@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المدن الذكية | مركز رؤية مجلس التعاون الخليجي</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#06131f;
+    color:white;
+}
+
+/* HERO */
+.hero{
+    min-height:90vh;
+    background:
+    linear-gradient(120deg, rgba(0,20,35,.95), rgba(0,80,70,.8), rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    padding:60px 8%;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:780px;
+}
+
+.tag{
+    display:inline-block;
+    background:#00ffcc;
+    color:#001b24;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    line-height:1;
+    margin-bottom:22px;
+    color:#00ffcc;
+}
+
+.hero p{
+    font-size:19px;
+    line-height:1.8;
+    max-width:700px;
+}
+
+/* MAIN */
+.section{
+    padding:70px 8%;
+}
+
+.section h2{
+    font-size:34px;
+    color:#00ffcc;
+    margin-bottom:18px;
+}
+
+.section p{
+    color:#d7e9ec;
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* STATS */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
+    margin-top:35px;
+}
+
+.stat{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(0,255,204,.25);
+    border-radius:18px;
+    padding:28px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.stat h3{
+    font-size:34px;
+    color:#00ffcc;
+    margin-bottom:8px;
+}
+
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px;
+    margin-top:35px;
+}
+
+.card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(0,255,204,.22);
+    border-radius:20px;
+    padding:28px;
+    transition:.3s;
+    box-shadow:0 15px 35px rgba(0,0,0,.22);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.09);
+}
+
+.card h3{
+    color:#00ffcc;
+    margin-bottom:12px;
+    font-size:21px;
+}
+
+.card p{
+    font-size:15px;
+}
+
+/* CASE STUDY */
+.case-section{
+    margin:60px 8%;
+    padding:55px;
+    border-radius:30px;
+    background:
+    linear-gradient(rgba(0,30,40,.88), rgba(0,30,40,.88)),
+    url("https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.case-section h2{
+    color:#00ffcc;
+    text-align:center;
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+/* FUTURE */
+.future{
+    padding:80px 8%;
+    background:#001b24;
+    text-align:center;
+}
+
+.future h2{
+    color:#00ffcc;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.future p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    color:#d7e9ec;
+}
+
+.back{
+    display:inline-block;
+    margin-top:35px;
+    background:#00ffcc;
+    color:#001b24;
+    text-decoration:none;
+    padding:14px 26px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.footer{
+    background:#020b12;
+    padding:28px;
+    text-align:center;
+    color:#9fbfc5;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:46px;
+    }
+
+    .case-section{
+        margin:30px 5%;
+        padding:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">الحياة الحضرية المستقبلية</span>
+        <h1>المدن الذكية</h1>
+        <p>
+            تجمع المدن الذكية بين التكنولوجيا والاستدامة والبيانات والتصميم الذي يركز على الإنسان
+            لبناء حياة حضرية أكثر أماناً ونظافة وسرعة وترابطاً في دول الخليج والعالم.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>ما هي المدن الذكية؟</h2>
+    <p>
+        تستخدم المدن الذكية تقنيات رقمية مثل الذكاء الاصطناعي، وإنترنت الأشياء،
+        وتحليل البيانات، وشبكات الجيل الخامس، والأتمتة لتحسين النقل، واستخدام الطاقة،
+        والسلامة العامة، والرعاية الصحية، والتعليم، والاستدامة البيئية.
+    </p>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>5G</h3>
+            <p>اتصال عالي السرعة</p>
+        </div>
+
+        <div class="stat">
+            <h3>AI</h3>
+            <p>اتخاذ قرارات أكثر ذكاءً</p>
+        </div>
+
+        <div class="stat">
+            <h3>IoT</h3>
+            <p>بنية تحتية مترابطة</p>
+        </div>
+
+        <div class="stat">
+            <h3>CO₂</h3>
+            <p>انبعاثات حضرية أقل</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>التقنيات الأساسية وراء المدن الذكية</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🤖 الذكاء الاصطناعي</h3>
+            <p>
+                يساعد الذكاء الاصطناعي المدن على إدارة المرور والطاقة والأمن والخدمات
+                وأنظمة الطوارئ بكفاءة أعلى.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 إنترنت الأشياء</h3>
+            <p>
+                تجمع أجهزة الاستشعار بيانات فورية من الطرق والمباني والمركبات
+                وأنظمة المياه والمساحات العامة.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚦 التنقل الذكي</h3>
+            <p>
+                تقلل أنظمة النقل الذكية الازدحام، وتحسن السلامة، وتدعم المركبات الكهربائية وذاتية القيادة.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ الطاقة الذكية</h3>
+            <p>
+                تدير الشبكات الذكية الكهرباء بكفاءة وتدمج الطاقة الشمسية والرياح ومصادر الطاقة المتجددة الأخرى.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏥 الرعاية الصحية الذكية</h3>
+            <p>
+                تحسن الأنظمة الصحية المتصلة رعاية المرضى والاستجابة للطوارئ والتشخيص عن بُعد ومراقبة الصحة.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌿 البنية التحتية المستدامة</h3>
+            <p>
+                تقلل المباني الخضراء وأنظمة التبريد الفعالة وإدارة النفايات الذكية وتقنيات ترشيد المياه الأثر البيئي.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="case-section">
+    <h2>دراسات حالة للمدن الذكية في الخليج</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🇸🇦 نيوم</h3>
+            <p>
+                مشروع سعودي مستقبلي يقوم على الطاقة النظيفة والبنية التحتية المتقدمة والتصميم الحضري للجيل القادم.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🇦🇪 مدينة مصدر</h3>
+            <p>
+                تطوير حضري مستدام رائد يجمع بين الطاقة النظيفة والبحث والمباني الخضراء والتنقل الذكي.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🇶🇦 مدينة لوسيل</h3>
+            <p>
+                مدينة ذكية مخططة في قطر صُممت بوسائل نقل حديثة وبنية رقمية وأنظمة حضرية مستدامة.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="future">
+    <h2>مستقبل المدن الذكية في دول مجلس التعاون الخليجي</h2>
+    <p>
+        تتحول دول الخليج إلى مختبر عالمي للابتكار الحضري الذكي. ومع نمو المدن،
+        ستساعد الأنظمة الذكية الحكومات على تحسين جودة الحياة، وتقليل الهدر،
+        وحماية البيئة، وبناء اقتصادات مرنة للأجيال القادمة.
+    </p>
+
+    <a href="sustainability-ar.html" class="back">⬅ العودة إلى الاستدامة</a>
+</section>
+
+<div class="footer">
+    © 2026 مركز رؤية مجلس التعاون الخليجي | المدن الذكية
+</div>
+
+</body>
+</html>

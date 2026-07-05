@@ -117,11 +117,16 @@ font-size:48px;
 
 .card{
 
-border-radius:24px;
-background:white;
-transition:.4s;
-overflow:hidden;
+background:linear-gradient(145deg,#ffffff,#f6fbf8);
+padding:38px;
+border-radius:25px;
+min-height:260px;
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+overflow:visible;
 border:1px solid rgba(0,77,37,.08);
+transition:.4s;
 
 }
 
@@ -133,10 +138,10 @@ box-shadow:0 25px 55px rgba(0,0,0,.15);
 }
 
 .card h3{
-
-font-size:28px;
-margin-bottom:18px;
-
+    font-size:25px;
+    margin-bottom:20px;
+    line-height:1.4;
+    padding-bottom:8px;
 }
 
 .card p{

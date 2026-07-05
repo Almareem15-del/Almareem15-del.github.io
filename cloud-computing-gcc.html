@@ -1,40 +1,420 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cloud Computing | The GCC Vision Hub</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<nav><div class="logo"><h2>The GCC Vision Hub</h2></div>
-<ul><li><a href="index.html">Home</a></li><li><a href="technology.html">Technology</a></li></ul></nav>
+<html lang="en">
+<head>
 
-<section class="article-hero">
-<div class="article-overlay">
-<span class="article-tag">TECHNOLOGY</span>
-<h1>Cloud Computing:<br>Powering the Digital Future of the GCC</h1>
-<p class="article-meta">The GCC Vision Hub • July 2026 • 6 min read</p>
-</div></section>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<section class="article-content">
-<h2>Introduction</h2>
-<p>Cloud computing has become the foundation of modern digital services. Instead of relying only on physical servers inside an office, organizations can securely store data, run applications, and scale their operations through cloud platforms. Across the GCC, cloud technology is helping governments, startups, universities, and businesses accelerate digital transformation.</p>
+<title>Cloud Computing | GCC Vision Hub</title>
 
-<div class="info-box">
-<h3>☁️ Did You Know?</h3>
-<p>Cloud platforms allow organizations to increase or decrease computing resources within minutes, helping reduce costs while supporting growth.</p>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#06131c;
+color:white;
+}
+
+.hero{
+min-height:95vh;
+background:
+linear-gradient(120deg,rgba(0,20,40,.95),rgba(0,110,180,.82),rgba(0,0,0,.35)),
+url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:60px 8%;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.logo{
+display:inline-block;
+background:white;
+color:#0079b8;
+padding:14px 28px;
+border-radius:0 0 35px 0;
+font-weight:bold;
+margin-bottom:60px;
+}
+
+.tag{
+color:#79d9ff;
+letter-spacing:6px;
+font-weight:bold;
+margin-bottom:16px;
+}
+
+.hero h1{
+font-size:82px;
+color:#79d9ff;
+margin-bottom:20px;
+}
+
+.hero h3{
+font-size:30px;
+font-weight:400;
+margin-bottom:25px;
+}
+
+.line{
+width:90px;
+height:5px;
+background:#79d9ff;
+margin:25px 0;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.9;
+max-width:700px;
+color:#e3f8ff;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+font-size:38px;
+color:#79d9ff;
+margin-bottom:20px;
+}
+
+.section p{
+font-size:17px;
+line-height:1.9;
+color:#dff5fb;
+}
+
+.stats{
+margin:60px 8%;
+padding:45px;
+border-radius:30px;
+background:rgba(255,255,255,.04);
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.stat{
+text-align:center;
+padding:25px;
+background:rgba(255,255,255,.05);
+border-radius:18px;
+}
+
+.stat h2{
+font-size:40px;
+color:#79d9ff;
+margin-bottom:8px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:22px;
+border:1px solid rgba(121,217,255,.2);
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,.08);
+}
+
+.card h3{
+color:#79d9ff;
+margin-bottom:15px;
+}
+
+.quote{
+margin:70px 8%;
+padding:45px;
+border-left:6px solid #79d9ff;
+background:rgba(255,255,255,.05);
+border-radius:20px;
+font-size:22px;
+font-style:italic;
+line-height:1.8;
+}
+
+.future{
+padding:80px 8%;
+background:#021a24;
+text-align:center;
+}
+
+.future h2{
+font-size:40px;
+color:#79d9ff;
+margin-bottom:20px;
+}
+
+.future p{
+max-width:900px;
+margin:auto;
+line-height:1.9;
+}
+
+.back{
+display:inline-block;
+margin-top:35px;
+padding:14px 30px;
+background:#79d9ff;
+color:#021a24;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.footer{
+background:#020b12;
+padding:30px;
+text-align:center;
+color:#b4d6df;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="logo">
+GCC VISION HUB
 </div>
 
-<h2>Why the Cloud Matters</h2>
-<p>Cloud services provide flexibility, reliability, and security. Teams can collaborate from different locations, deploy new software quickly, and protect valuable information using advanced backup and disaster recovery systems.</p>
+<div class="tag">
+CLOUD COMPUTING REPORT
+</div>
 
-<h2>Benefits for Businesses</h2>
-<p>Companies use the cloud to improve customer service, analyze business data, support remote work, and launch new products faster. Small businesses benefit because they can access enterprise-grade technology without building expensive data centers.</p>
+<h1>
+Cloud Computing
+</h1>
 
-<h2>Cloud in the GCC</h2>
-<p>As the GCC continues investing in digital economies, cloud infrastructure supports smart government services, financial technology, healthcare, education, logistics, and innovation. It enables organizations to adapt quickly while maintaining high performance and security.</p>
+<h3>
+Powering the Digital Future of the GCC
+</h3>
 
-<h2>Looking Ahead</h2>
-<p>The future of cloud computing includes stronger cybersecurity, artificial intelligence integration, edge computing, and sustainable data centers. These developments will help create a more connected, resilient, and innovative GCC.</p>
+<div class="line"></div>
 
-<a href="technology.html" class="back-button">⬅ Back to Technology</a>
+<p>
+
+Cloud computing provides flexible,
+secure and scalable computing resources
+that allow governments,
+businesses and startups
+to innovate faster while reducing infrastructure costs.
+
+</p>
+
+</div>
+
 </section>
 
-<footer class="footer"><h2>The GCC Vision Hub</h2><p>Turning Ideas into a Better Tomorrow.</p></footer>
-</body></html>
+<section class="section">
+
+<h2>
+Executive Summary
+</h2>
+
+<p>
+
+Cloud computing has become one of the most important technologies behind digital transformation.
+Instead of maintaining physical servers,
+organizations can access computing power,
+storage,
+databases and software through the internet,
+making technology more efficient,
+secure and scalable.
+
+</p>
+
+</section>
+
+<section class="stats">
+
+<h2 style="text-align:center;color:#79d9ff;margin-bottom:35px;">
+
+Cloud by the Numbers
+
+</h2>
+
+<div class="stats-grid">
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Availability</p>
+</div>
+
+<div class="stat">
+<h2>☁</h2>
+<p>Scalable Infrastructure</p>
+</div>
+
+<div class="stat">
+<h2>AI</h2>
+<p>Cloud Powered</p>
+</div>
+
+<div class="stat">
+<h2>Global</h2>
+<p>Digital Connectivity</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>
+Cloud Computing Models
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>☁ Public Cloud</h3>
+<p>Shared cloud infrastructure available over the internet.</p>
+</div>
+
+<div class="card">
+<h3>🏢 Private Cloud</h3>
+<p>Dedicated cloud infrastructure designed for one organization.</p>
+</div>
+
+<div class="card">
+<h3>🔄 Hybrid Cloud</h3>
+<p>A combination of public and private cloud environments.</p>
+</div>
+
+<div class="card">
+<h3>💻 Infrastructure as a Service (IaaS)</h3>
+<p>Virtual computing resources delivered on demand.</p>
+</div>
+
+<div class="card">
+<h3>⚙ Platform as a Service (PaaS)</h3>
+<p>Development platforms for building applications efficiently.</p>
+</div>
+
+<div class="card">
+<h3>📦 Software as a Service (SaaS)</h3>
+<p>Applications delivered through the internet without local installation.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>
+Cloud Applications
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🏛 Government</h3>
+<p>Digital public services and secure citizen platforms.</p>
+</div>
+
+<div class="card">
+<h3>🏥 Healthcare</h3>
+<p>Electronic health records and cloud-based medical systems.</p>
+</div>
+
+<div class="card">
+<h3>🏦 Banking</h3>
+<p>Secure digital banking infrastructure and financial services.</p>
+</div>
+
+<div class="card">
+<h3>🤖 Artificial Intelligence</h3>
+<p>AI models rely heavily on cloud computing resources.</p>
+</div>
+
+<div class="card">
+<h3>🎓 Education</h3>
+<p>Online learning and cloud collaboration platforms.</p>
+</div>
+
+<div class="card">
+<h3>🏭 Industry</h3>
+<p>Smart manufacturing powered by cloud-connected systems.</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="quote">
+
+"The cloud is no longer just infrastructure.
+It has become the foundation of Artificial Intelligence,
+digital government and the future economy."
+
+</div>
+
+<section class="future">
+
+<h2>
+
+Future of Cloud Computing
+
+</h2>
+
+<p>
+
+As GCC countries continue investing in AI,
+smart cities,
+digital government and Industry 4.0,
+cloud computing will remain the digital backbone
+that enables innovation,
+security and economic diversification.
+
+</p>
+
+<a href="technology.html" class="back">
+
+⬅ Back to Technology
+
+</a>
+
+</section>
+
+<div class="footer">
+
+© 2026 GCC Vision Hub | Cloud Computing
+
+</div>
+
+</body>
+</html>

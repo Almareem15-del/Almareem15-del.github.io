@@ -3,95 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>التكنولوجيا | مركز رؤية مجلس التعاون الخليجي</title>
-<link rel="stylesheet" href="style.css">
+<title>Technology | GCC Vision Hub</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#07111f;color:white}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:#030b16}
+nav h2{color:#67d7ff}
+nav ul{list-style:none;display:flex;gap:25px}
+nav a{color:white;text-decoration:none;font-weight:bold}
+
+.hero{
+min-height:95vh;
+background:linear-gradient(120deg,rgba(0,15,35,.95),rgba(0,80,120,.80),rgba(0,0,0,.35)),
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;background-position:center;display:flex;align-items:center;padding:60px 8%;
+}
+.hero-content{max-width:800px}
+.tag{display:inline-block;background:white;color:#0077aa;padding:14px 26px;border-radius:0 0 35px 0;font-weight:bold;margin-bottom:70px}
+.label{color:#67d7ff;letter-spacing:6px;font-weight:bold;margin-bottom:16px}
+.hero h1{font-size:82px;color:#67d7ff;margin-bottom:18px}
+.hero h3{font-size:30px;font-weight:400;margin-bottom:25px}
+.line{width:90px;height:5px;background:#67d7ff;margin:25px 0}
+.hero p{font-size:18px;line-height:1.8;max-width:650px;color:#dff5ff}
+
+.section{padding:75px 8%}
+.section h2{font-size:38px;color:#67d7ff;margin-bottom:20px}
+.section p{color:#d7e9ec;line-height:1.8;font-size:17px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:40px}
+.card-link{text-decoration:none;color:white}
+.card{min-height:230px;background:rgba(255,255,255,.05);padding:30px;border-radius:24px;border:1px solid rgba(103,215,255,.25);box-shadow:0 15px 35px rgba(0,0,0,.25);transition:.35s}
+.card:hover{transform:translateY(-10px);background:rgba(255,255,255,.09)}
+.card h3{color:#67d7ff;font-size:24px;margin-bottom:14px}
+.card p{font-size:15px}
+
+.spotlight{margin:50px 8%;padding:55px;border-radius:34px;background:linear-gradient(rgba(0,25,45,.92),rgba(0,25,45,.92)),url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center}
+.spotlight h2{color:#67d7ff;text-align:center;font-size:38px;margin-bottom:30px}
+.spotlight-card{background:rgba(255,255,255,.07);border:1px solid rgba(103,215,255,.3);border-radius:26px;padding:35px;max-width:850px;margin:auto;text-align:center}
+.spotlight-card h3{font-size:32px;color:#67d7ff;margin-bottom:15px}
+.read-btn{display:inline-block;margin-top:25px;background:#67d7ff;color:#03111a;padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:bold}
+
+.future{padding:85px 8%;background:#031622;text-align:center}
+.future h2{color:#67d7ff;font-size:40px;margin-bottom:20px}
+.future p{max-width:900px;margin:auto;color:#d7e9ec;line-height:1.9}
+
+.footer{background:#020b12;text-align:center;padding:30px;color:#9fc3cf}
+
+@media(max-width:800px){
+.hero h1{font-size:52px}
+nav{flex-direction:column;gap:15px}
+nav ul{flex-wrap:wrap;justify-content:center}
+}
+</style>
 </head>
 
 <body dir="rtl">
 
 <nav>
-<h2>مركز رؤية مجلس التعاون الخليجي</h2>
+<h2>The GCC Vision Hub</h2>
 <ul>
-<li><a href="index-ar.html">الرئيسية</a></li>
-<li><a href="technology-ar.html">التكنولوجيا</a></li>
-<li><a href="sustainability.html?lang=ar">الاستدامة</a></li>
-<li><a href="entrepreneurship.html?lang=ar">ريادة الأعمال</a></li>
-<li><a href="technology.html">English</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="technology.html">Technology</a></li>
+<li><a href="sustainability.html">Sustainability</a></li>
+<li><a href="entrepreneurship.html">Entrepreneurship</a></li>
 </ul>
 </nav>
 
 <section class="hero">
 <div class="hero-content">
-<span class="tag">التكنولوجيا</span>
-<h1>التكنولوجيا في دول مجلس التعاون الخليجي</h1>
+<div class="tag">GCC VISION HUB</div>
+<div class="label">TECHNOLOGY PLATFORM</div>
+<h1>Technology</h1>
+<h3>Exploring Digital Innovation Across the GCC</h3>
+<div class="line"></div>
 <p>
-استكشاف الذكاء الاصطناعي، الحوسبة السحابية، الأمن السيبراني، إنترنت الأشياء، والبلوك تشين في مستقبل الخليج.
+Discover artificial intelligence, cloud computing, cybersecurity, IoT,
+blockchain and future technologies shaping governments, industries and society.
 </p>
 </div>
 </section>
 
 <section class="section">
-<h2>موضوعات التكنولوجيا</h2>
+<h2>Explore Technology Topics</h2>
+<p>
+Learn how emerging technologies are transforming the future of the Gulf region.
+</p>
 
 <div class="grid">
 
-<a href="ai-future-gcc.html?lang=ar" class="card-link">
+<a href="ai-future-gcc.html" class="card-link">
 <div class="card">
-<h3>🤖 الذكاء الاصطناعي</h3>
-<p>دور الذكاء الاصطناعي في تطوير الاقتصاد والخدمات الحكومية والمدن الذكية.</p>
+<h3>🤖 Artificial Intelligence</h3>
+<p>AI is reshaping healthcare, education, government services and business.</p>
 </div>
 </a>
 
-<a href="cloud-computing-gcc.html?lang=ar" class="card-link">
+<a href="cloud-computing-gcc.html" class="card-link">
 <div class="card">
-<h3>☁ الحوسبة السحابية</h3>
-<p>كيف تساعد السحابة المؤسسات الخليجية على النمو بسرعة وأمان.</p>
+<h3>☁ Cloud Computing</h3>
+<p>Cloud platforms help organizations become faster, scalable and more secure.</p>
 </div>
 </a>
 
-<a href="cybersecurity-gcc.html?lang=ar" class="card-link">
+<a href="cybersecurity-gcc.html" class="card-link">
 <div class="card">
-<h3>🔐 الأمن السيبراني</h3>
-<p>حماية الأنظمة الرقمية والبنية التحتية الحيوية في المنطقة.</p>
+<h3>🔒 Cybersecurity</h3>
+<p>Protecting digital infrastructure is essential for smart economies.</p>
 </div>
 </a>
 
-<a href="internet-of-things-gcc.html?lang=ar" class="card-link">
+<a href="internet-of-things-gcc.html" class="card-link">
 <div class="card">
-<h3>🌐 إنترنت الأشياء</h3>
-<p>استخدام الأجهزة المتصلة لتحسين المدن والصناعة والخدمات الذكية.</p>
+<h3>🌐 Internet of Things</h3>
+<p>Connected devices power smart homes, industries, cities and logistics.</p>
 </div>
 </a>
 
-<a href="blockchain-gcc.html?lang=ar" class="card-link">
+<a href="blockchain-gcc.html" class="card-link">
 <div class="card">
-<h3>⛓ البلوك تشين</h3>
-<p>تعزيز الثقة والشفافية في الخدمات الرقمية والمالية.</p>
+<h3>⛓ Blockchain</h3>
+<p>Blockchain improves trust, digital identity, transparency and secure systems.</p>
 </div>
 </a>
 
-<a href="future-technologies-gcc.html?lang=ar" class="card-link">
+<a href="future-technologies-gcc.html" class="card-link">
 <div class="card">
-<h3>🚀 تقنيات المستقبل</h3>
-<p>الروبوتات، الحوسبة الكمية، والتقنيات التي ستشكل مستقبل الخليج.</p>
+<h3>🚀 Future Technologies</h3>
+<p>Robotics, quantum computing, space tech and digital twins are shaping tomorrow.</p>
 </div>
 </a>
 
 </div>
 </section>
 
-<section class="section">
-<h2>رؤية تكنولوجية</h2>
+<section class="spotlight">
+<h2>Featured Technology Insight</h2>
+<div class="spotlight-card">
+<h3>🤖 Artificial Intelligence: Shaping the Future of the GCC</h3>
 <p>
-تمثل التكنولوجيا محركاً أساسياً للتحول في دول مجلس التعاون الخليجي. ومع تسارع الاستثمار في الابتكار الرقمي،
-يمكن للتكنولوجيا أن تدعم التنويع الاقتصادي، وتحسين جودة الحياة، وبناء حكومات أكثر ذكاءً وكفاءة.
+AI is transforming healthcare, education, finance, transportation and public services.
+Across the GCC, countries are investing in AI to build smarter, faster and more efficient economies.
+</p>
+<a href="ai-future-gcc.html" class="read-btn">Read Full Article →</a>
+</div>
+</section>
+
+<section class="future">
+<h2>The Future of Technology in the GCC</h2>
+<p>
+Technology is one of the strongest engines of GCC transformation. From AI and cloud
+computing to cybersecurity and blockchain, digital innovation will support economic
+diversification, smarter governance and future-ready societies.
 </p>
 </section>
 
-<footer>
-<p>© 2026 مركز رؤية مجلس التعاون الخليجي. جميع الحقوق محفوظة.</p>
-</footer>
+<div class="footer">
+© 2026 GCC Vision Hub | Technology
+</div>
 
-<script src="language.js?v=3"></script>
 </body>
 </html>

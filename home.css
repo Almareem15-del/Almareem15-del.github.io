@@ -1,1 +1,273 @@
+/* ==========================================
+   GCC VISION HUB - HOME PREMIUM V1
+==========================================*/
 
+/* HERO */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(rgba(0,20,10,.45),rgba(0,20,10,.55)),
+    radial-gradient(circle at top right,
+    rgba(255,215,0,.12),
+    transparent 45%);
+}
+
+.hero-content{
+    position:relative;
+    z-index:5;
+    animation:fadeUp 1s ease;
+}
+
+.hero h1{
+
+    font-size:78px;
+    font-weight:800;
+    letter-spacing:-2px;
+    margin-bottom:18px;
+    text-shadow:0 10px 35px rgba(0,0,0,.45);
+
+}
+
+.hero p{
+
+    font-size:22px;
+    color:#f5f5f5;
+    margin-bottom:35px;
+
+}
+
+/* BUTTON */
+
+.hero button{
+
+    background:#FFD54F;
+    color:#00391d;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:700;
+    transition:.35s;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.hero button:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 25px 55px rgba(0,0,0,.35);
+
+}
+
+/* NAVBAR */
+
+nav{
+
+backdrop-filter:blur(20px);
+
+}
+
+nav a{
+
+position:relative;
+
+}
+
+nav a::after{
+
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#FFD54F;
+transition:.35s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/* IDEAS */
+
+.ideas-section{
+
+padding:100px 10%;
+
+}
+
+.ideas-section h2{
+
+font-size:48px;
+
+}
+
+/* CARDS */
+
+.card{
+
+border-radius:24px;
+background:white;
+transition:.4s;
+overflow:hidden;
+border:1px solid rgba(0,77,37,.08);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:18px;
+
+}
+
+.card p{
+
+font-size:17px;
+line-height:1.8;
+
+}
+
+/* ABOUT */
+
+.about-card{
+
+border-radius:22px;
+transition:.35s;
+
+}
+
+.about-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+/* CONTACT */
+
+.contact-info{
+
+border-radius:25px;
+
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+
+transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus{
+
+border-color:#0b6b3a;
+box-shadow:0 0 0 4px rgba(11,107,58,.12);
+outline:none;
+
+}
+
+/* FOUNDER */
+
+.founder-image img{
+
+transition:.4s;
+
+}
+
+.founder-image img:hover{
+
+transform:scale(1.04);
+box-shadow:0 25px 55px rgba(0,77,37,.25);
+
+}
+
+/* FOOTER */
+
+.footer{
+
+padding:80px 20px;
+
+}
+
+.footer-links a{
+
+transition:.35s;
+
+}
+
+.footer-links a:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* SCROLL */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.ideas-section h2{
+
+font-size:36px;
+
+}
+
+}

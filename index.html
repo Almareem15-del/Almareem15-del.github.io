@@ -135,17 +135,23 @@
             <p>🌐 GCC Vision Hub</p>
         </div>
 
-        <form class="contact-form">
+     <form class="contact-form" action="https://formsubmit.co/thegccvisionhub@gmail.com" method="POST">
 
-            <input type="text" placeholder="Your Name" required>
+    <input type="text" name="name" placeholder="Your Name" required>
 
-            <input type="email" placeholder="Your Email" required>
+    <input type="email" name="email" placeholder="Your Email" required>
 
-            <textarea placeholder="Your Message" rows="6" required></textarea>
+    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
 
-            <button type="submit">Send Message</button>
+    <input type="hidden" name="_captcha" value="false">
 
-        </form>
+    <input type="hidden" name="_subject" value="New Message from GCC Vision Hub">
+
+    <input type="hidden" name="_next" value="https://almareem15-del.github.io/">
+
+    <button type="submit">Send Message</button>
+
+</form>
 
     </div>
 

@@ -1,98 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blockchain | The GCC Vision Hub</title>
-<link rel="stylesheet" href="style.css">
+
+<title>Blockchain | GCC Vision Hub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#070913;
+color:white;
+}
+
+.hero{
+min-height:95vh;
+background:
+linear-gradient(120deg,rgba(10,10,40,.95),rgba(80,40,180,.82),rgba(0,0,0,.35)),
+url("https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:60px 8%;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.logo{
+display:inline-block;
+background:white;
+color:#5b4dff;
+padding:14px 28px;
+border-radius:0 0 35px 0;
+font-weight:bold;
+margin-bottom:60px;
+}
+
+.tag{
+color:#b5a9ff;
+letter-spacing:6px;
+font-weight:bold;
+margin-bottom:16px;
+}
+
+.hero h1{
+font-size:82px;
+color:#b5a9ff;
+margin-bottom:20px;
+}
+
+.hero h3{
+font-size:30px;
+font-weight:400;
+margin-bottom:25px;
+}
+
+.line{
+width:90px;
+height:5px;
+background:#b5a9ff;
+margin:25px 0;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.9;
+max-width:700px;
+color:#ece8ff;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+font-size:38px;
+color:#b5a9ff;
+margin-bottom:20px;
+}
+
+.section p{
+font-size:17px;
+line-height:1.9;
+color:#ddd7ff;
+}
+
+.stats{
+margin:60px 8%;
+padding:45px;
+border-radius:30px;
+background:rgba(255,255,255,.04);
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:22px;
+}
+
+.stat{
+padding:25px;
+background:rgba(255,255,255,.05);
+border-radius:20px;
+text-align:center;
+}
+
+.stat h2{
+font-size:40px;
+color:#b5a9ff;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:22px;
+border:1px solid rgba(181,169,255,.2);
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,.08);
+}
+
+.card h3{
+color:#b5a9ff;
+margin-bottom:15px;
+}
+
+.quote{
+margin:70px 8%;
+padding:45px;
+background:rgba(255,255,255,.05);
+border-left:6px solid #b5a9ff;
+border-radius:20px;
+font-size:22px;
+font-style:italic;
+line-height:1.8;
+}
+
+.future{
+padding:80px 8%;
+background:#141126;
+text-align:center;
+}
+
+.future h2{
+font-size:40px;
+color:#b5a9ff;
+margin-bottom:20px;
+}
+
+.future p{
+max-width:900px;
+margin:auto;
+line-height:1.9;
+}
+
+.back{
+display:inline-block;
+margin-top:35px;
+padding:14px 30px;
+background:#b5a9ff;
+color:#141126;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.footer{
+background:#07040d;
+padding:30px;
+text-align:center;
+color:#cfc8ff;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<nav>
+<section class="hero">
+
+<div class="hero-content">
 
 <div class="logo">
-<h2>The GCC Vision Hub</h2>
+
+GCC VISION HUB
+
 </div>
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="technology.html">Technology</a></li>
-</ul>
+<div class="tag">
 
-</nav>
+BLOCKCHAIN REPORT
 
-<section class="article-hero">
+</div>
 
-<div class="article-overlay">
+<h1>
 
-<span class="article-tag">TECHNOLOGY</span>
+Blockchain
 
-<h1>Blockchain:<br>Building Trust in the Digital Economy</h1>
+</h1>
 
-<p class="article-meta">
-The GCC Vision Hub • July 2026 • 6 min read
+<h3>
+
+Creating Trust in the Digital Economy
+
+</h3>
+
+<div class="line"></div>
+
+<p>
+
+Blockchain is a decentralized digital ledger that securely records transactions,
+enhances transparency,
+reduces fraud,
+and enables trusted digital ecosystems across governments,
+businesses and financial institutions.
+
 </p>
 
 </div>
 
 </section>
 
-<section class="article-content">
+<section class="section">
 
-<h2>Introduction</h2>
+<h2>
 
-<p>
-Blockchain is transforming the way information and transactions are recorded, verified, and shared. Unlike traditional databases, blockchain stores information in secure, interconnected blocks that are extremely difficult to alter. This creates greater transparency, security, and trust between governments, businesses, and individuals.
-</p>
+Executive Summary
 
-<div class="info-box">
-
-<h3>⛓️ Did You Know?</h3>
+</h2>
 
 <p>
-Blockchain is used for much more than cryptocurrencies. It supports digital identity, supply chain management, healthcare records, finance, logistics, and secure government services around the world.
+
+Blockchain technology enables secure,
+transparent and tamper-resistant record keeping.
+Its applications extend beyond cryptocurrencies into finance,
+government,
+healthcare,
+supply chains,
+digital identity and smart contracts,
+making it a key technology for the GCC's digital future.
+
 </p>
+
+</section>
+
+<section class="stats">
+
+<h2 style="text-align:center;color:#b5a9ff;margin-bottom:35px;">
+
+Blockchain Highlights
+
+</h2>
+
+<div class="stats-grid">
+
+<div class="stat">
+<h2>🔗</h2>
+<p>Distributed Ledger</p>
+</div>
+
+<div class="stat">
+<h2>🔒</h2>
+<p>Secure Transactions</p>
+</div>
+
+<div class="stat">
+<h2>⚡</h2>
+<p>Smart Contracts</p>
+</div>
+
+<div class="stat">
+<h2>🌍</h2>
+<p>Global Trust</p>
+</div>
 
 </div>
 
-<h2>How Blockchain Works</h2>
+</section>
+
+<section class="section">
+
+<h2>
+
+Key Blockchain Applications
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🏦 Financial Services</h3>
+<p>Faster payments, digital assets and transparent financial systems.</p>
+</div>
+
+<div class="card">
+<h3>📜 Smart Contracts</h3>
+<p>Automatically execute agreements without intermediaries.</p>
+</div>
+
+<div class="card">
+<h3>🪪 Digital Identity</h3>
+<p>Secure digital identities for citizens and organizations.</p>
+</div>
+
+<div class="card">
+<h3>🚢 Supply Chains</h3>
+<p>Improve traceability, authenticity and operational transparency.</p>
+</div>
+
+<div class="card">
+<h3>🏛 Government</h3>
+<p>Enhance digital public services and record management.</p>
+</div>
+
+<div class="card">
+<h3>🏥 Healthcare</h3>
+<p>Secure medical records while improving data sharing.</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="quote">
+
+"Blockchain creates trust where trust was previously difficult to establish."
+
+</div>
+
+<section class="future">
+
+<h2>
+
+The Future of Blockchain
+
+</h2>
 
 <p>
-Every transaction added to a blockchain is verified by the network and linked to previous records, creating a permanent and transparent history. This reduces fraud, improves accountability, and increases confidence in digital systems.
+
+Blockchain will increasingly support digital identity,
+cross-border trade,
+smart government,
+financial innovation,
+and secure data sharing.
+Combined with Artificial Intelligence,
+IoT and cloud computing,
+it will become a foundational technology for future digital economies.
+
 </p>
 
-<h2>Blockchain Across the GCC</h2>
+<a href="technology.html" class="back">
 
-<p>
-Countries across the GCC are exploring blockchain for digital government, customs, trade, banking, healthcare, and smart city initiatives. These projects aim to improve efficiency while reducing paperwork, costs, and processing times.
-</p>
-
-<h2>Benefits for Businesses</h2>
-
-<p>
-Businesses use blockchain to improve supply chain visibility, secure financial transactions, verify digital documents, and strengthen customer trust. Startups are also developing innovative blockchain-based solutions across multiple industries.
-</p>
-
-<h2>The Future of Blockchain</h2>
-
-<p>
-As blockchain technology matures, it is expected to work alongside artificial intelligence, cloud computing, and the Internet of Things to create highly secure, intelligent, and connected digital ecosystems. The GCC is well positioned to become a leader in responsible blockchain innovation.
-</p>
-
-<a href="technology.html" class="back-button">
 ⬅ Back to Technology
+
 </a>
 
 </section>
 
-<footer class="footer">
+<div class="footer">
 
-<h2>The GCC Vision Hub</h2>
+© 2026 GCC Vision Hub | Blockchain
 
-<p>Turning Ideas into a Better Tomorrow.</p>
-
-</footer>
+</div>
 
 </body>
 </html>
